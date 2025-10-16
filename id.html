@@ -7,7 +7,11 @@
   <meta name="description" content="Cinema website">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="Bui Tuan Anh">
-  <link rel="stylesheet" href="card.css"> <link rel="stylesheet" href="./assets/css/responsive.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  <link rel="stylesheet" href="card.css"> 
+  <link rel="stylesheet" href="nav.css">
+  <script src="nav.js"></script>
+  <link rel="stylesheet" href="./assets/css/responsive.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Cinema website</title>
@@ -151,17 +155,26 @@
       <i onclick="prev()" class="fa-solid fa-circle-chevron-left slide-btn slide-btn-left prev"></i>
       <i onclick="next()" class="fa-solid fa-circle-chevron-right slide-btn slide-btn-right next"></i>
     </div>
-    <div class="container-fluid text-center section" id="container">
+    
+    <div class="container-fluid text-center section" id="container" >
       <div class="row content">
         <div class="col-sm-1 sidenav"></div>
         <div class="col-sm-10">
 
-          <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist" style="padding: 2rem 0">
+          <!-- <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist" style="padding: 2rem 0">
             <li class="nav-item movie-type" role="presentation">
               <button class="nav-link active" id="pills-nowshowing-tab" data-bs-toggle="pill" data-bs-target="#pills-nowshowing" type="button" role="tab" aria-controls="nowshowing" aria-selected="true">Phim Đang Chiếu</button>
             </li>
             <li class="nav-item" role="presentation">
               <button class="nav-link" id="pills-comingsoon-tab" data-bs-toggle="pill" data-bs-target="#pills-comingsoon" role="tab" aria-controls="comingsoon" aria-selected="false">Phim Sắp Chiếu</button>
+            </li>
+          </ul> -->
+          <ul class="nav nav-pills nav-justified" id="movie-pills-nav" role="tablist" style="padding: 0.5rem 0; margin: 1.5rem 0;">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-nowshowing-tab" data-bs-toggle="pill" data-bs-target="#pills-nowshowing" type="button" role="tab" aria-controls="nowshowing" aria-selected="true">Phim Đang Chiếu</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-comingsoon-tab" data-bs-toggle="pill" data-bs-target="#pills-comingsoon" type="button" role="tab" aria-controls="comingsoon" aria-selected="false">Phim Sắp Chiếu</button>
             </li>
           </ul>
 
@@ -169,7 +182,9 @@
 
             <div class="tab-pane fade show active" id="pills-nowshowing" role="tabpanel" aria-labelledby="pills-nowshowing-tab" >
               <div class="row row-cols-auto list-container justify-content-center"> 
-                <div class="col">
+
+                <a href="./movie_Joker2.html" style=" padding: 0;">
+                  <div class="col">
                   <div class="custom-movie-card movie-selection">
                       <div class="custom-card-image-container">
                           <img src="./assets/img/joker2.jpg" alt="Joker: Điên Có Đôi">
@@ -187,6 +202,7 @@
                       </div>
                   </div>
                 </div>
+                </a>
 
                 <div class="col">
                   <div class="custom-movie-card">

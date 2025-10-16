@@ -111,3 +111,7 @@ body {
 .list-container .col {
     padding: 10px; 
 }
+a{
+    margin: 0;
+    padding: 0;
+}
