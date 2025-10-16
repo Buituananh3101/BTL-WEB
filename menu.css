@@ -1,0 +1,40 @@
+/* MENU */
+.nav-menu {
+    display: none;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-layout {
+    column-gap: 5rem;
+}
+
+.nav-layout li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.nav-layout li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-layout li a:hover {
+    color: #F75154;
+}
+.nav-layout .active {/* html nào có active thì đổi màu ở ô web đó */
+    color: #F75154;
+}
+.nav-layout a{
+    border-radius: 30px;
+}

@@ -60,7 +60,7 @@ body {
     padding: 10px 20px; /* Thêm khoảng đệm bên trong */
     background-color: rgba(255, 255, 255, 0.5);/*trong suốt*/
     border: none; /* Loại bỏ viền */
-    border-radius: 5px; /* Bo tròn nhẹ các góc */
+    border-radius: 8px; /* Bo tròn nhẹ các góc */
     color: white; /* Màu chữ trắng */
     font-size: 1em;
     font-weight: bold;

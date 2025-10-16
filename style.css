@@ -31,7 +31,7 @@ html {
 }
 
 #header {
-    height: 70px;
+    height: 50px;
     background-color: #10141B;
     position: fixed;
     display: flex;
@@ -53,7 +53,7 @@ html {
 }
 
 .nav-logo {
-    height: 70px;
+    height: 40px;
     min-width: 100px;
     display: flex;
 
@@ -65,52 +65,15 @@ html {
     height: 100%;
 }
 
-/* MENU */
-.nav-menu {
-    display: none;
-    color: #fff;
-    padding: 20px;
-    font-size: 20px;
-    cursor: pointer;
-}
-.nav-layout {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-layout {
-    column-gap: 5rem;
-}
-
-.nav-layout li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 0 2rem;
-}
-
-.nav-layout li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.nav-layout li a:hover {
-    color: #F75154;
-}
-.nav-layout .active {/* html nào có active thì đổi màu ở ô web đó */
-    color: #F75154;
-}
 
 /* Design: Button register, login, out */
 .nav-layout button {
-    width: 140px;
+    width: 100px;
     height: 40px;
     color: #fff;
     background-color: #10141B;
-    border-radius: 50px;
-    border: 1px solid #fff;
+    border-radius: 30px;
+    border: 2px solid #fff;
 }
 .nav-layout .btn-login {
     background-color: #F75154;
@@ -234,7 +197,7 @@ html {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1000; /* làm cho đăng kí đăng nhập ko đè lên nhau */
     display: none;
     align-items: center;
     justify-content: center;
@@ -352,7 +315,7 @@ html {
     display: flex;
     overflow: hidden;
     position: relative;
-    margin-top: 70px;
+    margin-top: 40px;
     transition: transform 0.5s
 }
 
@@ -447,105 +410,3 @@ body {
 }
 
 /* PRICE */
-.price-heading p {
-    color: white;
-    text-align: center;
-}
-.price-heading p {
-    color: white;
-    text-align: center;
-}
-
-.price-heading b {
-    font-size: 25px;
-}
-
-.price-container p {
-    color: white;
-}
-
-.table-price table {
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 13px;
-    text-align: center;
-}
-
-.table-price table,
-.table-price th,
-.table-price td {
-    border: 1px solid #1E293B;
-    border-collapse: collapse;
-
-}
-
-.table-price th,
-.table-price td {
-    padding-top: 8px;
-    padding-bottom: 8px;
-
-}
-
-.table-price .table-head {
-    text-align: center;
-}
-
-th.col1 {
-    width: 200px;
-}
-
-td.col1 {
-    text-align: left;
-    padding-left: 10px;
-}
-
-th.col2,
-th.col3 {
-    width: 400px;
-
-}
-
-
-
-.table-price th,
-.table-price td {
-    color: #94A3B8;
-}
-
-td.vipseat {
-    color: #EAB315;
-}
-
-td.sweetbox {
-    color: #EF4444;
-}
-
-td.white {
-    color: white;
-}
-
-p.caution-text {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: #6d727c;
-    font-size: 13px;
-}
-
-.condition {
-    font-size: 15px;
-    color: white;
-}
-
-/* introduction */
-.description p {
-    color: white;
-    font-size: 18px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.card-img-top{
-    min-width: 150px;
-    width: 250px;
-    object-fit: cover;
-    transition: transform 0.5s ease-in-out;
-}
