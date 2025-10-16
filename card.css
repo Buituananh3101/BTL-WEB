@@ -1,0 +1,112 @@
+/* --- Cài đặt chung cho trang (trong card.css chỉ giữ những style không gây xung đột) --- */
+body {
+    background-color: #141414; /* Màu nền tối */
+    font-family: Arial, sans-serif; /* Font chữ phổ thông */
+    /* Các thuộc tính display: flex, justify-content, align-items, height: 100vh đã được loại bỏ 
+       để không xung đột với bố cục Bootstrap tổng thể của bạn. */
+    margin: 0;
+}
+
+/* --- Kiểu dáng cho Custom Movie Card --- */
+.custom-movie-card {
+    width: 235px; /* Giữ nguyên kích thước bạn đã cung cấp */
+    background-color: #1e1e1e;
+    border-radius: 8px; /* Bo tròn các góc của card */
+    overflow: hidden; /* Quan trọng: Ẩn đi phần ảnh bị phóng to tràn ra ngoài */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease; /* Hiệu ứng nảy lên nhẹ khi hover */
+    margin-bottom: 20px; /* Thêm khoảng cách dưới cho mỗi card */
+}
+
+/* Hiệu ứng khi di chuột vào card */
+.custom-movie-card:hover {
+    transform: scale(1.03); /* Phóng to nhẹ toàn bộ card */
+}
+
+/* --- Container chứa ảnh và nút Đặt Vé --- */
+.custom-card-image-container {
+    position: relative; 
+    overflow: hidden; 
+    aspect-ratio: 2 / 3; 
+}
+
+/* Poster phim */
+.custom-card-image-container img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+    transition: transform 0.4s ease;
+}
+
+/* Khi hover vào card, ảnh bên trong sẽ phóng to lên */
+.custom-movie-card:hover .custom-card-image-container img {
+    transform: scale(1.15); /* Phóng to ảnh lên 115% */
+}
+
+/* --- Nút "Đặt vé" (Custom Play Button) --- */
+.custom-play-button {
+    /* Định vị tuyệt đối so với custom-card-image-container */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Căn giữa nút */
+
+    /* Kiểu dáng mới: Hình chữ nhật */
+    width: auto; /* Chiều rộng tự động theo nội dung */
+    padding: 10px 20px; /* Thêm khoảng đệm bên trong */
+    background-color: #e50914; /* Màu đỏ nổi bật */
+    border: none; /* Loại bỏ viền */
+    border-radius: 5px; /* Bo tròn nhẹ các góc */
+    color: white; /* Màu chữ trắng */
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase; /* Chuyển chữ thành in hoa */
+    letter-spacing: 1px; /* Khoảng cách giữa các chữ */
+    white-space: nowrap; /* Ngăn chữ bị xuống dòng */
+    text-decoration: none; /* Loại bỏ gạch chân mặc định của thẻ 'a' */
+
+    /* Hiển thị và hiệu ứng */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Mặc định ẩn nút */
+    transition: opacity 0.4s ease, background-color 0.2s ease; /* Thêm hiệu ứng cho màu nền */
+    pointer-events: all; /* Cho phép sự kiện chuột tác động lên nút */
+    z-index: 10; /* Đảm bảo nút nằm trên ảnh */
+}
+
+/* Khi hover vào card, nút "Đặt vé" sẽ hiện ra */
+.custom-movie-card:hover .custom-play-button {
+    opacity: 1; /* Hiện nút "Đặt vé" */
+}
+
+/* Hiệu ứng khi hover trực tiếp lên nút "Đặt vé" */
+.custom-play-button:hover {
+    background-color: #ff202b; /* Đổi màu khi di chuột vào nút */
+}
+
+/* --- Phần nội dung text --- */
+.custom-card-content {
+    padding: 16px;
+    text-align: center; /* Căn giữa nội dung text */
+}
+
+.custom-card-content h3 {
+    margin: 0 0 4px 0; 
+    font-size: 1.1em;
+}
+
+.custom-card-content p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #aaa; 
+}
+
+/* Điều chỉnh cho các cột Bootstrap */
+/* Thêm padding cho mỗi cột để các card không bị dính vào nhau */
+.list-container .col {
+    padding: 10px; 
+}

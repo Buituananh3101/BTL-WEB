@@ -8,7 +8,7 @@
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="Bui Tuan Anh">
   <!--  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
   <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -168,28 +168,23 @@
       <div class="row content">
         <div class="col-sm-2 sidenav"></div>
         <div class="col-sm-8">
-          <!-- Nav-Tabs -->
-          <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist" style="padding-top: 20px">
+
+          <!-- Nav-Tabs https://getbootstrap.com/docs/5.3/components/navs-tabs/-->
+          <ul class="nav nav-pills" id="pills-tab" role="tablist" style="padding: 2rem 0">
+            <!-- home-nowshowing -->
             <li class="nav-item movie-type" role="presentation">
-              <button class="nav-link active" id="pills-nowshowing-tab" data-bs-toggle="pill"
-                data-bs-target="#pills-nowshowing" type="button" role="tab" aria-controls="nowshowing"
-                aria-selected="true">Phim Đang Chiếu</button>
+              <button class="nav-link active" id="pills-nowshowing-tab" data-bs-toggle="pill" data-bs-target="#pills-nowshowing" type="button" role="tab" aria-controls="nowshowing" aria-selected="true">Phim Đang Chiếu</button>
             </li>
+            <!-- profile-comingsoon -->
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-comingsoon-tab" data-bs-toggle="pill"
-                data-bs-target="#pills-comingsoon" role="tab" aria-controls="comingsoon" aria-selected="false">Phim Sắp
-                Chiếu</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-imax-tab" data-bs-toggle="pill" data-bs-target="#pills-imax" role="tab"
-                aria-controls="imax" aria-selected="false">Phim IMAX</button>
+              <button class="nav-link" id="pills-comingsoon-tab" data-bs-toggle="pill" data-bs-target="#pills-comingsoon" role="tab" aria-controls="comingsoon" aria-selected="false">Phim Sắp Chiếu</button>
             </li>
           </ul>
 
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-nowshowing" role="tabpanel" aria-labelledby="pills-nowshowing-tab">
+          <div class="tab-content" id="pills-tabContent">  
 
-              <!-- Now Showing Movies -->
+            <!-- Nowshowing Movies -->
+            <div class="tab-pane fade show active" id="pills-nowshowing" role="tabpanel" aria-labelledby="pills-nowshowing-tab" >
               <div class="row row-cols-auto list-container">
 
                 <!-- Movie 1 -->
@@ -716,7 +711,7 @@
                   </div>
                 </div>
 
-                <!-- Movie 1 -->
+                <!-- Movie 9 -->
                 <div class="col">
                   <div class="card" style="width: 12rem">
                     <div class="img-container">
@@ -747,99 +742,6 @@
               </div>
             </div>
             
-            <!-- IMAX Movies -->
-            <div class="tab-pane fade" id="pills-imax" role="tabpanel" aria-labelledby="pills-imax-tab">
-              <div class="row row-cols-auto list-container">
-
-                <!-- Movie 1 -->
-                <div class="col">
-                  <div class="card" style="width: 12rem">
-                    <div class="img-container">
-                      <img src="./assets/img/joker2.jpg" class="card-img-top" alt="Joker" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Joker: Điên Có Đôi</h5>
-                      <p class="card-text">
-                        <b>Thể loại:</b> Hồi hộp, Nhạc kịch, Tâm lý, Tội phạm<br />
-                        <b>Thời lượng:</b> 138 phút<br />
-                        <b>Khởi chiếu:</b> 4-10-2024
-                      </p>
-                      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a href="./movie_Joker2.html">
-                          <button type="button" class="btn btn-warning" id="bottom">
-                            Đặt Vé
-                          </button>
-                        </a>
-                        <a href="./movie_Joker2.html">
-                          <button type="button" class="btn btn-outline-danger" id="info_bottom">
-                            Chi Tiết
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Movie 2 -->
-                <div class="col">
-                  <div class="card" style="width: 12rem">
-                    <div class="img-container">
-                      <img src="./assets/img/deadpool3.jpg" class="card-img-top" alt="Deadpool" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Deadpool & Wolverine</h5>
-                      <p class="card-text">
-                        <b>Thể loại:</b> Hành động<br />
-                        <b>Thời lượng:</b> 127 phút<br />
-                        <b>Khởi chiếu:</b> 27-07-2024
-                      </p>
-                      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
-                          <button type="button" class="btn btn-warning" id="bottom">
-                            Đặt Vé
-                          </button>
-                        </a>
-                        <a href="#">
-                          <button type="button" class="btn btn-outline-danger" id="info_bottom">
-                            Chi Tiết
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Movie 3 -->
-                <div class="col">
-                  <div class="card" style="width: 12rem">
-                    <div class="img-container">
-                      <img src="./assets/img/venom3.jpg" class="card-img-top" alt="Venom 3" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Venom: Điệu Nhảy Cuối</h5>
-                      <p class="card-text">
-                        <b>Thể loại:</b> Hành động<br />
-                        <b>Thời lượng:</b> 130 phút<br />
-                        <b>Khởi chiếu:</b> 25-10-2024
-                      </p>
-                      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
-                          <button type="button" class="btn btn-warning" id="bottom">
-                            Đặt Vé
-                          </button>
-                        </a>
-                        <a href="#">
-                          <button type="button" class="btn btn-outline-danger" id="info_bottom">
-                            Chi Tiết
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
           </div>
 
           <div class="col-sm-2 sidenav">
