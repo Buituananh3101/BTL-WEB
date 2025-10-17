@@ -58,8 +58,11 @@ html {
     
 }
 .nav-layout .btn-login {
-    background-color: #F75154;
-    border: 1px solid #F75154;
+    /* background-color: #F75154; */
+    /* border: 1px solid #F75154; */
+    /* background-color:#FDA6C4 ; */
+    background-image: linear-gradient(#F9cadb,#FDA6C4);
+    border: 1px solid #FDA6C4;
     transition: transform 0.3s;
 }
 .nav-layout button:hover {
@@ -71,11 +74,11 @@ html {
 @keyframes modelFadeIn {
     from {
         opacity: 1;
-        transform: translateY(-140px);
+        transform: translateX(-200px);
     }
 
     to {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 .btn-login.remove{
@@ -138,7 +141,8 @@ html {
 .login-body p {
     display: flex;
     margin: 15px 0;
-    color: #E54242;
+    /* color: #E54242; */
+    color: #FDA6C4;
     justify-content: end;
     cursor: pointer;
 }
@@ -146,7 +150,8 @@ html {
     text-decoration: underline;
 }
 .login-body button {
-    background-image: linear-gradient(to right, #E6121D, #FB5F60);
+    /* background-image: linear-gradient(to right, #E6121D, #FB5F60); */
+    background-image: linear-gradient(#F9cadb,#FDA6C4);
     height: 40px;
     border-radius: 20px;
     margin: 10px 0;
@@ -161,7 +166,8 @@ html {
 }
 
 .login-footer a {
-    color: #E54242;
+    /* color: #E54242; */
+    color: #FDA6C4;
     text-decoration: none;
 }
 
@@ -190,7 +196,7 @@ html {
 .register-container {
     background-color: #10141B;
     width: 500px;
-    height: 550px;
+    height: 600px;
     position: relative;
     animation: modelFadeIn ease 0.5s;
     border-radius: 20px;
@@ -253,7 +259,8 @@ html {
 
 
 .register-body button {
-    background-image: linear-gradient(to right, #E6121D, #FB5F60);
+    /* background-image: linear-gradient(to right, #E6121D, #FB5F60); */
+    background-image: linear-gradient(#F9cadb,#FDA6C4);
     height: 40px;
     border-radius: 20px;
     margin: 10px 0;
@@ -269,7 +276,8 @@ html {
 }
 
 .register-footer a {
-    color: #E54242;
+    /* color: #E54242; */
+    color: #FDA6C4;
     text-decoration: none;
 }
 
@@ -298,10 +306,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     /* background-color: #10141b; */
     background-color: #fff;
+    /* background-image: url("assets/background/patel-5.webp"); */
+    /* background-image: linear-gradient(#F9cadb,#FDA6C4); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
 }
 .section {
-    background-color: #10141b;
+    /* background-color: #10141b; */
     /* background-color: #fff; */
+    background-image: url("assets/background/troidem.jpg");
     padding-top: 20px;
 }
 #container {
