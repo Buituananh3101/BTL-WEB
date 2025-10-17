@@ -1,5 +1,5 @@
 /* MENU */
-.nav-menu {
+/* .nav-menu {
     display: none;
     color: #fff;
     padding: 20px;
@@ -31,10 +31,108 @@
 
 .nav-layout li a:hover {
     color: #F75154;
+} */
+/* html nào có active thì đổi màu ở ô web đó */
+/* .nav-layout .active {
+    color: #F75154;
+} */
+
+
+/* =================== HEADER CSS =================== */
+/* LOGO */
+.nav-logo .name {
+    color: #fff;
+    display: none;
+    margin: auto;
+    font-size: 13px;
 }
-.nav-layout .active {/* html nào có active thì đổi màu ở ô web đó */
+
+.nav-logo {
+    height: 50px;
+    min-width: 100px;
+    display: flex;
+
+}
+
+.nav-logo img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+/* --- Style chung --- */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a; /* Ví dụ màu nền */
+    padding: 10px 20px;
+    color: white;
+}
+
+.nav-layout li {
+    list-style-type: none;
+}
+
+.nav-layout a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    display: block;
+}
+
+.nav-layout a:hover {
     color: #F75154;
 }
-.nav-layout a{
-    border-radius: 30px;
+
+.nav-layout .active {
+    background-color: #0d6efd; /* Màu active của Bootstrap */
+    border-radius: 8px;
+}
+.nav-layout .active:hover {
+    color: #fff;
+}
+
+
+/* --- CSS cho màn hình lớn (Desktop) --- */
+.nav-layout {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Khoảng cách giữa các mục */
+    width: 100%; 
+    justify-content: space-between;
+}
+
+.nav-pills {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+/* .nav-actions button {
+    margin-left: 10px;
+} */
+
+/* Ẩn icon menu hamburger trên màn hình lớn */
+.nav-menu {
+    display: none;
+}
+
+
+/* --- CSS cho màn hình nhỏ (Tablet & Mobile) - Breakpoint tại 992px --- */
+@media (max-width: 992px) {
+    /* Ẩn menu đầy đủ đi */
+    .nav-layout {
+        display: none;
+    }
+
+    /* Hiện icon hamburger lên */
+    .nav-menu {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
 }
