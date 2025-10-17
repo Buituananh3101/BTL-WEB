@@ -33,13 +33,13 @@ html {
 #header {
     height: 50px;
     background-color: #10141B;
-    position: fixed;
-    display: flex;
-    z-index: 1000;
-    top: 0;
-    right: 0;
-    width: 100%;
-    align-items: center;
+    /* position: fixed; */
+    /* display: flex; */
+    /* z-index: 1000; */
+    /* top: 0; */
+    /* right: 0; */
+    /* width: 100%; */
+    /* align-items: center; */
     justify-content: space-between; /* 2. Đẩy 2 nhóm con ra 2 phía */
 
 }
@@ -292,59 +292,6 @@ html {
     margin: 10px;
 }
 
-/* slide */
-#slide {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    margin-top: 40px;
-    transition: transform 0.5s
-}
-
-#slide img {
-    width: 100%;
-    object-fit: cover;
-    animation: fadeInSlideshow 1s;
-}
-
-@keyframes fadeInSlideshow {
-    from {
-        opacity: 0.9;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-#slide .slide-btn:hover {
-    background-color: #F75154;
-
-}
-
-#slide .slide-btn-left {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 0 50px 50px 0;
-    cursor: pointer;
-}
-
-#slide .slide-btn-right {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 50px 0 0 50px;
-    cursor: pointer;
-}
 
 /* BODY */
 body {
@@ -353,8 +300,8 @@ body {
     background-color: #fff;
 }
 .section {
-    /* background-color: #10141b; */
-    background-color: #fff;
+    background-color: #10141b;
+    /* background-color: #fff; */
     padding-top: 20px;
 }
 #container {
