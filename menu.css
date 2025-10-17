@@ -83,11 +83,14 @@
 }
 
 .nav-layout a:hover {
-    color: #F75154;
+    /* color: #F75154; */
+    color: #FDA6C4;
 }
 
 .nav-layout .active {
-    background-color: #0d6efd; /* Màu active của Bootstrap */
+    /* Màu active của Bootstrap */
+    /* background-color: #0d6efd;  */
+    background-image: linear-gradient(#F9cadb,#FDA6C4);
     border-radius: 8px;
 }
 .nav-layout .active:hover {
@@ -136,3 +139,4 @@
         cursor: pointer;
     }
 }
+

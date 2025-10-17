@@ -30,7 +30,8 @@
 }
 
 #slide .slide-btn:hover {
-    background-color: #F75154;
+    /* background-color: #F75154; */
+   background-image: linear-gradient(#F9cadb,#FDA6C4);
 
 }
 

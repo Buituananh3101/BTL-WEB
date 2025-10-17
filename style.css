@@ -74,7 +74,7 @@ html {
 @keyframes modelFadeIn {
     from {
         opacity: 1;
-        transform: translateX(-200px);
+        transform: translateX(-140px);
     }
 
     to {
@@ -155,7 +155,8 @@ html {
     height: 40px;
     border-radius: 20px;
     margin: 10px 0;
-    color: #fff;
+    /* color: #fff; */
+    color: black;
     cursor: pointer;
 }
 .login-footer {
@@ -264,7 +265,8 @@ html {
     height: 40px;
     border-radius: 20px;
     margin: 10px 0;
-    color: #fff;
+    /* color: #fff; */
+    color: black;
     cursor: pointer;
 }
 

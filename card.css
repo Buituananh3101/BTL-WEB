@@ -86,7 +86,8 @@ body {
 
 /* Hiệu ứng khi hover trực tiếp lên nút "Đặt vé" */
 .custom-play-button:hover {
-    background-color: #ff202b; /* Đổi màu khi di chuột vào nút */
+    /* background-color: #ff202b; */
+    background-image: linear-gradient(#F9cadb,#FDA6C4);
 }
 
 /* --- Phần nội dung text --- */
