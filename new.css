@@ -1,72 +1,128 @@
-*{
+/* --- General Styling --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: #10141B;
-}
-
-#news{
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
-
-#news .header{
-    color: #fff;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10px;
-}
-#news .row{
-    justify-content: center;
-    align-items: center;
-}
-#news .card{
-    border-radius: 10px;
-    border: 1px solid #2D3644;
-    width: 300px;
-    height: 400px;
-    margin: 10px;
-    overflow: hidden;
-}
-
-#news .card img{
-    width: 300px;
-    height: 200px;
-}
-
-#news .card img:hover{
-
-}
-
-#news .card h4{
     
 }
 
-#news .card img{
+/* --- Promotions Section --- */
+.promotions-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #e83e8c; 
+        /* Pink color for the title */
+    margin-bottom: 2rem;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+/* --- Grid Layout for Cards --- */
+.promotions-grid {
+    display: grid;
+        /* Creates 4 columns on large screens */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1.5rem; 
+        /* Space between cards */
+}
+
+/* --- Individual Card Styling --- */
+.promo-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+        /* Ensures image stays within rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    color: #5c5c5c;
+}
+
+.promo-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    color: #e83e8c; 
+    transform: translateY(-2px);
+}
+
+.promo-image {
     width: 100%;
+    max-height: 120px;
+    min-height: 120px;
+    height: auto;
+    display: block;
     object-fit: cover;
+        /* Cho ảnh ko móp */
 }
 
-#news .card .content{
-    padding: 10px;
+.promo-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+        /* Allows content to fill the card height */
 }
 
-.card .content .date{
-    margin: 5px 0px;
-    font-size: 14px;
-    color: #9BA2AE;
+.promo-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+    flex-grow: 1; 
+        /* Pushes the date to the bottom */
 }
 
-#news a{
-    text-decoration: none;
+.promo-date {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+/* --- "View More" Button --- */
+.view-more-container {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.view-more-btn {
+    background-color: transparent;
+    border: 2px solid #e83e8c; 
+        /* Pink border */
+    color: #e83e8c; 
+        /* Pink text */
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background-color: #e83e8c;
     color: #fff;
 }
-/* tablet & mobile */
-@media (max-width: 1023px){
-    .row{
-        flex-direction: column;
+
+/* --- Responsive Design --- */
+/* For tablets: 2 columns */
+@media (max-width: 992px) {
+    .promotions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For mobile phones: 1 column */
+@media (max-width: 576px) {
+    .promotions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 2rem;
     }
 }

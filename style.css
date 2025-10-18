@@ -319,7 +319,10 @@ body {
     /* background-color: #10141b; */
     /* background-color: #fff; */
     background-image: url("assets/background/troidem.jpg");
+        /* Màu nền card */
     padding-top: 20px;
+    
+    
 }
 #container {
     height: auto;
