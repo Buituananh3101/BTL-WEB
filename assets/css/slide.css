@@ -1,16 +1,18 @@
 
 #slide {
+    
     display: flex;
     justify-content: center;
     overflow: hidden;
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
-    transition: transform 0.5s
+    transition: transform 0.5s;
 }
 
 #slide img {
     width: 90%;
+    height: 800px;
     object-fit: cover;
     animation: fadeInSlideshow 1s;
     /* border-bottom-left-radius: 10px; */
