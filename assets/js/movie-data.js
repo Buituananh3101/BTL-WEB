@@ -1,6 +1,3 @@
-// Nội dung cho file: assets/js/movie-data.js
-// (ĐÃ DỌN DẸP CÁC KÝ TỰ UNICODE VÔ HÌNH)
-
 const ALL_MOVIES = [
     // === PHIM ĐANG CHIẾU ===
     {
@@ -50,7 +47,7 @@ const ALL_MOVIES = [
         tagline: "Thể loại: Kinh dị",
         description: "Tiếp nối câu chuyện rùng rợn, phần 3 đi sâu vào nguồn gốc của quỷ Tee Yod và những bí mật đen tối của gia đình.",
         release_date: "10/10/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/dhHvESRCNtI",
         schedules: [
             {
                 date: "20/10",
@@ -84,9 +81,9 @@ const ALL_MOVIES = [
         meta: "2025 • 120 phút",
         rating_text: "Hài hước",
         tagline: "Thể loại: Hài, Hành động, Phiêu lưu",
-        description: "Một bộ phim hài hành động với sự tham gia của Keanu Reeves và Seth Rogen.",
+        description: "Một thiên thần hộ mệnh (Keanu Reeves) vụng về nhưng có ý tốt, cố gắng giúp đỡ một anh chàng làm nghề tài xế (Aziz Ansari) bằng cách tráo đổi cuộc đời anh ta với một nhà đầu tư mạo hiểm giàu có (Seth Rogen).",
         release_date: "17/10/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/m4HyVF5R51U",
         schedules: [
             {
                 date: "20/10",
@@ -159,7 +156,7 @@ const ALL_MOVIES = [
         tagline: "Thể loại: Hoạt hình, Hành động, Kỳ ảo",
         description: "Câu chuyện về quá khứ của Gojo Satoru và Geto Suguru thời còn là học sinh trường Chú thuật.",
         release_date: "10/10/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/RYI-WG_HFV8",
         schedules: [
             {
                 date: "20/10",
@@ -194,7 +191,7 @@ const ALL_MOVIES = [
         tagline: "Thể loại: Hài, Lãng mạn",
         description: "Một cô gái xinh đẹp nhưng tính tình kỳ quái gặp phải một anh chàng CEO lạnh lùng.",
         release_date: "05/09/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/kiJtQfZ-3nw",
         schedules: [
             {
                 date: "20/10",
@@ -229,7 +226,7 @@ const ALL_MOVIES = [
         tagline: "Thể loại: Hoạt hình",
         description: "Hành trình của cậu bé cá heo đi tìm bí mật của bảy đại dương.",
         release_date: "03/10/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/wmhAcwYZk2k",
         schedules: [
             {
                 date: "20/10",
@@ -264,7 +261,7 @@ const ALL_MOVIES = [
         tagline: "Thể loại: Gia đình, Tâm lý",
         description: "Câu chuyện cảm động về tình bà cháu.",
         release_date: "17/10/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/YPCtgD0KnGk",
         schedules: [
             {
                 date: "20/10",
@@ -299,7 +296,7 @@ const ALL_MOVIES = [
         tagline: "Thể loại: Gia đình, Hài, Tâm lý",
         description: "Câu chuyện về hai chị em gái đùm bọc lẫn nhau vượt qua khó khăn.",
         release_date: "03/10/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/A3SjIciWaqI",
         schedules: [
             {
                 date: "20/10",
@@ -332,9 +329,9 @@ const ALL_MOVIES = [
         meta: "2025 • 117 phút",
         rating_text: "Lãng mạn",
         tagline: "Thể loại: Hài, Lãng mạn",
-        description: "Mô tả phim...",
+        description: "Một bộ phim hài lãng mạn về một nhà thiên văn học trẻ tuổi và một cô gái bí ẩn tin rằng mình đến từ một vì sao khác.",
         release_date: "03/10/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/l5BuE4eJi4U",
         schedules: [
             {
                 date: "20/10",
@@ -367,9 +364,9 @@ const ALL_MOVIES = [
         meta: "2025 • 118 phút",
         rating_text: "Hành động",
         tagline: "Thể loại: Tâm lý, Giật gân",
-        description: "Mô tả phim...",
+        description: "Một chuyến bay bị không tặc. Một cựu lính đặc nhiệm và phi hành đoàn phải chiến đấu trong không gian hẹp để cứu hành khách và ngăn chặn thảm họa.",
         release_date: "19/09/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/Q-Zf8KhyS6E",
         schedules: [
             {
                 date: "20/10",
@@ -402,9 +399,9 @@ const ALL_MOVIES = [
         meta: "2025 • 133 phút",
         rating_text: "Hài hước",
         tagline: "Thể loại: Hài",
-        description: "Mô tả phim...",
+        description: "Tiếp nối hành trình dở khóc dở cười của anh chàng thấy ma, lần này liên quan đến một vụ cướp kim cương và dàn hồn ma quái dị mới.",
         release_date: "02/09/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/AvxgRKe7sjI",
         schedules: [
             {
                 date: "20/10",
@@ -437,9 +434,9 @@ const ALL_MOVIES = [
         meta: "2025 • 120 phút",
         rating_text: "Âm nhạc",
         tagline: "Thể loại: Phim tài liệu, Âm nhạc",
-        description: "Mô tả phim...",
+        description: "Bộ phim tài liệu ghi lại concert quốc gia lịch sử 'Tổ Quốc Trong Tim', tôn vinh lòng yêu nước và di sản âm nhạc Việt Nam.",
         release_date: "17/10/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/C7TaYSFm8fk",
         schedules: [
             {
                 date: "20/10",
@@ -472,9 +469,9 @@ const ALL_MOVIES = [
         meta: "2025 • (chưa rõ) phút",
         rating_text: "Lãng mạn",
         tagline: "Thể loại: Tình cảm",
-        description: "Mô tả phim...",
+        description: "Câu chuyện lãng mạn về hai con người ở hai thế giới khác nhau, nhưng số phận đã gắn kết họ lại một cách kỳ diệu.",
         release_date: "17/10/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/_x03xoSWlro",
         schedules: [
             {
                 date: "20/10",
@@ -507,9 +504,9 @@ const ALL_MOVIES = [
         meta: "2025 • 107 phút",
         rating_text: "Hài hước",
         tagline: "Thể loại: Hài, gia đình",
-        description: "Mô tả phim...",
+        description: "Một ông bố phát hiện con gái mình bị nhiễm virus zombie, nhưng cô bé vẫn giữ được ý thức. Anh cố gắng 'thuần hóa' cô bằng kinh nghiệm huấn luyện động vật của mình.",
         release_date: "08/08/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/heoeD1jbye8",
         schedules: [
             {
                 date: "20/10",
@@ -544,9 +541,9 @@ const ALL_MOVIES = [
         meta: "2025 • (chưa rõ) phút",
         rating_text: "Kinh dị",
         tagline: "Thể loại: Kinh dị / Tâm linh",
-        description: "Mô tả phim...",
+        description: "Một gia đình ở vùng quê phải tiến hành cải mả, nhưng vô tình đánh thức một linh hồn độc ác gắn liền với quá khứ đen tối của họ.",
         release_date: "31/10/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/xjHch1D7Nqg",
         schedules: [
             {
                 date: "31/10",
@@ -570,9 +567,9 @@ const ALL_MOVIES = [
         meta: "2025 • 99 phút",
         rating_text: "Kinh dị",
         tagline: "Thể loại: Kinh dị",
-        description: "Mô tả phim...",
+        description: "Một người phụ nữ sử dụng tà thuật rắn (Xà Thuật) để giành lại người yêu từ tình địch, nhưng nghi lễ hắc ám đòi hỏi một cái giá kinh hoàng.",
         release_date: "24/10/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/A5kDuGbTST4",
         schedules: [
             {
                 date: "24/10",
@@ -595,9 +592,9 @@ const ALL_MOVIES = [
         meta: "2025 • 73 phút",
         rating_text: "Kinh dị",
         tagline: "Thể loại: Kinh dị / Siêu nhiên",
-        description: "Mô tả phim...",
+        description: "Được kể từ góc nhìn của một chú chó, chứng kiến các sự kiện siêu nhiên kỳ lạ và đáng sợ trong ngôi nhà mới, cố gắng bảo vệ chủ nhân của mình khỏi một thế lực tà ác.",
         release_date: "03/10/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/auPnAAkrEBA",
         schedules: [
             {
                 date: "20/10",
@@ -630,9 +627,9 @@ const ALL_MOVIES = [
         meta: "2025 • 105 phút",
         rating_text: "Đang thịnh hành",
         tagline: "Thể loại: Hài, Phiêu lưu",
-        description: "Một bộ phim hài hước về chuyến đi...",
+        description: "Một bí mật đen tối của người chồng bị che giấu. Khi người vợ bắt đầu nghi ngờ, cô dấn thân vào một cuộc điều tra nguy hiểm, giống như trò chơi 'bịt mắt bắt nai'.",
         release_date: "31/10/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/enefvdfyYoo",
         schedules: [
             {
                 date: "25/10",
@@ -656,9 +653,9 @@ const ALL_MOVIES = [
         meta: "2025 • 98 phút",
         rating_text: "Hài kịch đen",
         tagline: "Thể loại: Chính kịch / Gia đình / Hài kịch đen",
-        description: "Mô tả phim...",
+        description: "Một gia đình không êm ấm tụ tập để mừng sinh nhật mẹ, nhưng những bí mật và bất bình sâu sắc bùng nổ, biến bữa tiệc thành hỗn loạn.",
         release_date: "05/09/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/vl2hIjD5oTY",
         schedules: [
             {
                 date: "20/10",
@@ -691,9 +688,9 @@ const ALL_MOVIES = [
         meta: "2025 • (chưa rõ) phút",
         rating_text: "Kinh dị",
         tagline: "Thể loại: Kinh dị / Hài",
-        description: "Mô tả phim...",
+        description: "Hai người bạn thuê một phòng trọ giá rẻ, và bị ám ảnh bởi hồn ma của một phụ nữ mang thai ('ma bầu') đã chết ở đó, hé lộ một bí mật đen tối.",
         release_date: "07/11/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/pGXfmnjTdsI",
         schedules: [
             {
                 date: "07/11",
@@ -716,9 +713,9 @@ const ALL_MOVIES = [
         meta: "2025 • 99 phút",
         rating_text: "Kinh dị / Hài",
         tagline: "Thể loại: Tình cảm / Hài / Kinh dị",
-        description: "Mô tả phim...",
+        description: "Phiên bản mới và hài hước của câu chuyện ma Thái kinh điển 'Pee Mak', kể về một người lính trở về nhà mà không biết vợ mình đã là ma.",
         release_date: "07/11/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/V4AX5zBm-ag",
         schedules: [
             {
                 date: "07/11",
@@ -741,9 +738,9 @@ const ALL_MOVIES = [
         meta: "2025 • (chưa rõ) phút",
         rating_text: "Ly kỳ",
         tagline: "Thể loại: Tâm lý / Ly kỳ",
-        description: "Mô tả phim...",
+        description: "Một bộ phim tâm lý ly kỳ về một người phụ nữ, sau khi được cấy ghép tim, bắt đầu mang những đặc điểm tính cách và ký ức đen tối của người hiến tạng.",
         release_date: "07/11/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/TBkDA7WjKZE",
         schedules: [
             {
                 date: "07/11",
@@ -766,9 +763,9 @@ const ALL_MOVIES = [
         meta: "2025 • (chưa rõ) phút",
         rating_text: "Hành động",
         tagline: "Thể loại: Hành động / Khoa học viễn tưởng",
-        description: "Mô tả phim...",
+        description: "Một nhóm lính trên một hành tinh xa xôi bị săn đuổi bởi một quái thú săn mồi vô hình coi họ là con mồi.",
         release_date: "07/11/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/4ORg9D6zNn4",
         schedules: [
             {
                 date: "07/11",
@@ -791,9 +788,9 @@ const ALL_MOVIES = [
         meta: "2025 • 120 phút",
         rating_text: "Hành động",
         tagline: "Thể loại: Phiêu lưu / Khoa học viễn tưởng",
-        description: "Mô tả phim...",
+        description: "Trong một tương lai loạn lạc, một người đàn ông tuyệt vọng cần tiền cứu con gái đã tham gia một chương trình thực tế chết người, nơi anh phải trốn chạy khỏi các sát thủ trong 30 ngày.",
         release_date: "07/11/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/CpgFJshfY-k",
         schedules: [
             {
                 date: "07/11",
@@ -816,9 +813,9 @@ const ALL_MOVIES = [
         meta: "2025 • (chưa rõ) phút",
         rating_text: "Hài / Hành động",
         tagline: "Thể loại: Hành động / Hài",
-        description: "Mô tả phim...",
+        description: "Một kho báu quý giá (Long Diên Hương) bị đánh cắp, dẫn đến một cuộc rượt đuổi hỗn loạn và đầy hành động giữa các băng đảng và một ngư dân vô tình bị lôi kéo vào.",
         release_date: "14/11/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/i-THQhaT7ts",
         schedules: [
             {
                 date: "14/11",
@@ -841,9 +838,9 @@ const ALL_MOVIES = [
         meta: "2025 • (chưa rõ) phút",
         rating_text: "Bom tấn",
         tagline: "Thể loại: Khoa học viễn tưởng / Phiêu lưu",
-        description: "Mô tả phim...",
+        description: "Jake Sully phải lãnh đạo người Na'vi chống lại một mối đe dọa mới, khi một ngọn núi lửa đe dọa phá hủy Pandora. Anh gặp gỡ 'Tộc Người Tro Tàn', một bộ lạc Na'vi của lửa.",
         release_date: "19/12/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/gqBFTGmDClQ",
         schedules: [
             {
                 date: "19/12",
@@ -866,9 +863,9 @@ const ALL_MOVIES = [
         meta: "2025 • (chưa rõ) phút",
         rating_text: "Kinh dị",
         tagline: "Thể loại: Kinh dị / Bí ẩn",
-        description: "Mô tả phim...",
+        description: "Tiếp nối các sự kiện kinh hoàng tại Freddy Fazbear's Pizza, câu chuyện đào sâu hơn vào lịch sử đen tối của các linh vật máy và vụ án trẻ em mất tích.",
         release_date: "05/12/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/yQ6tmH7WNdY",
         schedules: [
             {
                 date: "05/12",
@@ -891,9 +888,9 @@ const ALL_MOVIES = [
         meta: "2021 • 110 phút",
         rating_text: "Hành động / Võ thuật",
         tagline: "Thể loại: Hành động / Võ thuật / Khoa học viễn tưởng",
-        description: "Mô tả phim...",
+        description: "Võ sĩ MMA Cole Young bị Sub-Zero săn đuổi. Anh tìm nơi ẩn náu với các chiến binh được chọn để bảo vệ Earthrealm trong một trận chiến sinh tử giành vũ trụ.",
         release_date: "23/04/2021",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/3JPgwgMoMZE",
         schedules: [
             {
                 date: "20/10",
@@ -926,9 +923,9 @@ const ALL_MOVIES = [
         meta: "2025 • 110 phút",
         rating_text: "Kinh dị",
         tagline: "Thể loại: Kinh dị / Tâm linh",
-        description: "Mô tả phim...",
+        description: "Một cặp vợ chồng trẻ mua nhà vào nhầm ngày Tam Nương và sớm bị ám ảnh bởi những người chủ trước, những người không muốn họ ở đó.",
         release_date: "05/12/2025",
-        trailer_link: "https://www.youtube.com/embed/your-trailer-id",
+        trailer_link: "https://www.youtube.com/embed/ZZZUfZzX0ZU",
         schedules: [
             {
                 date: "05/12",
