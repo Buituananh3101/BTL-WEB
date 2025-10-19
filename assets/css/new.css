@@ -9,8 +9,16 @@ body {
 
 /* --- Promotions Section --- */
 .promotions-section {
-    max-width: 1000px;
+    max-width: 100%;
+    padding: 5px 15%;
     margin: 0 auto;
+    background-color: #fff;
+        /* Màu nền card */
+    /* background-image: url("../background/troidem.jpg");
+    padding-top: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; */
 }
 
 .section-title {
@@ -24,12 +32,12 @@ body {
 }
 
 /* --- Grid Layout for Cards --- */
+/* --- Grid Layout for Cards --- */
 .promotions-grid {
-    display: grid;
-        /* Creates 4 columns on large screens */
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 1.5rem; 
-        /* Space between cards */
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 280px);
+   gap: 1.5rem; 
+   justify-content: center;
 }
 
 /* --- Individual Card Styling --- */
@@ -53,8 +61,8 @@ body {
 
 .promo-image {
     width: 100%;
-    max-height: 120px;
-    min-height: 120px;
+    max-height: 130px;
+    min-height: 130px;
     height: auto;
     display: block;
     object-fit: cover;
