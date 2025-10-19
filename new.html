@@ -1,288 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cinema website" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Bui Tuan Anh" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Cinema website">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="Bui Tuan Anh">
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/new.css" />
 
-  
-  <link rel="stylesheet" href="assets/css/menu.css">
-  <link rel="stylesheet" href="./assets/css/responsive.css"> 
-  <link rel="stylesheet" href="assets/css/new.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Cinema website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Cinema website</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  
-  <link rel="stylesheet" href="assets/css/style.css"> 
-</head>
-
-<body>
+  <body>
     <div id="header">
-
       <div class="nav-logo">
         <a href="./index.html">
-        <img src="./assets/img/logo.webp" alt="">
+          <img src="./assets/img/logo.webp" alt="" />
         </a>
         <div class="name">
-        <p>TRUNG TÂM CHIẾU PHIM QUỐC GIA</p>
-        <p>National Cinema Center</p>
+          <p>TRUNG TÂM CHIẾU PHIM QUỐC GIA</p>
+          <p>National Cinema Center</p>
         </div>
       </div>
 
-      
       <div class="nav-menu">
         <i class="fa-solid fa-bars" id="menu-icon"></i>
       </div>
 
-
       <div class="nav-layout">
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="index.html" >Trang chủ</a>
+            <a class="nav-link" aria-current="page" href="index.html"
+              >Trang chủ</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#" style="border-radius: 8px; color: black;">Tin tức</a>
+            <a
+              class="nav-link active"
+              href="#"
+              style="border-radius: 8px; color: black"
+              >Tin tức</a
+            >
           </li>
           <li>
-             <a class="nav-link" href="new.html">Đặt vé</a>
+            <a class="nav-link" href="new.html">Đặt vé</a>
           </li>
         </ul>
         <div>
           <button class="btn-register js-register-btn">Đăng ký</button>
-          <button class="btn-login js-login-btn" style="color: black;">Đăng nhập</button>
+          <button class="btn-login js-login-btn" style="color: black">
+            Đăng nhập
+          </button>
         </div>
         <div class="login-user">
-            <!-- <i class="fa-regular fa-circle-user login-avt" ></i>
+          <!-- <i class="fa-regular fa-circle-user login-avt" ></i>
             <p class="login-name"></p> -->
-            <button class="login-out js-login-out">Đăng xuất</button>
+          <button class="login-out js-login-out">Đăng xuất</button>
         </div>
       </div>
-
     </div>
     <!-- Login -->
     <div class="login js-login">
-        <div class="login-container js-login-container">
-            <div class="login-header">
-                <h1>Đăng nhập</h1>
-                <div class="login-close js-login-close">
-                    <i class="fa-solid fa-x"></i>
-                </div>
-            </div>
-            <div class="login-body">
-                <label for="email"> Email</label>
-                <input type="email" name="" placeholder="Email" id="email1">
-                <label for="password"> Mật khẩu</label>
-                <input type="password" name="" placeholder="Mật Khẩu" id="password1">
-                <p>Quên mật khẩu?</p>
-                <button class="btn js-login-btn">Đăng nhập</button>
-            </div>
-            <footer class="login-footer">
-                <p>Bạn chưa có tài khoản? <a href="#" class="trybtn">Đăng ký</a></p>
-            </footer>
+      <div class="login-container js-login-container">
+        <div class="login-header">
+          <h1>Đăng nhập</h1>
+          <div class="login-close js-login-close">
+            <i class="fa-solid fa-x"></i>
+          </div>
         </div>
+        <div class="login-body">
+          <label for="email"> Email</label>
+          <input type="email" name="" placeholder="Email" id="email1" />
+          <label for="password"> Mật khẩu</label>
+          <input
+            type="password"
+            name=""
+            placeholder="Mật Khẩu"
+            id="password1"
+          />
+          <p>Quên mật khẩu?</p>
+          <button class="btn js-login-btn">Đăng nhập</button>
+        </div>
+        <footer class="login-footer">
+          <p>Bạn chưa có tài khoản? <a href="#" class="trybtn">Đăng ký</a></p>
+        </footer>
+      </div>
     </div>
 
     <div class="register js-register">
-        <div class="register-container js-register-container">
-            <div class="register-header">
-                <h1>Đăng ký</h1>
-                <div class="register-close js-register-close">
-                    <i class="fa-solid fa-x"></i>
-                </div>
-            </div>
-            <div class="register-body">
-                <div class="register-card1">
-                    <div class="column">
-                        <label for="surname">Họ</label>
-                        <input type="surname" name="" placeholder="Họ" id="surname">
-                    </div>
-                    <div class="column">
-                        <label for="name">Tên</label>
-                        <input type="name" name="" placeholder="Tên" id="name">
-                    </div>
-                </div>
-                <div class="register-card2">
-                    <div class="column">
-                        <label for="accountName">Tên tài khoản</label>
-                        <input type="accountName" name="" placeholder="Tên tài khoản" id="accountName">
-                    </div>
-                </div>
-                <div class="register-card3">
-                    <div class="column">
-                        <label for="number">Số điện thoại</label>
-                        <input type="text" placeholder="Số điện thoại" id="number">
-                    </div>
-                    <div class="column">
-                        <label for="email">Email</label>
-                        <input type="email" name="" placeholder="Email" id="email2">
-                    </div>
-                </div>
-                <div class="register-card4">
-                    <div class="column">
-                        <label for="password1">Mật khẩu</label>
-                        <input type="password1" name="" placeholder="Mật khẩu" id="password2">
-                    </div>
-                    <div class="column">
-                        <label for="password2">Xác nhận mật khẩu</label>
-                        <input type="password2" name="" placeholder="Xác nhận mật khẩu" id="confirmPassword">
-                    </div>
-                </div>
-                <button class="btn js-register-btn">Đăng Ký</button>
-            </div>
-            <footer class="register-footer">
-                <p>Bạn đã có tài khoản? <a href="#" class="trybtn">Đăng nhập</a></p>
-            </footer>
+      <div class="register-container js-register-container">
+        <div class="register-header">
+          <h1>Đăng ký</h1>
+          <div class="register-close js-register-close">
+            <i class="fa-solid fa-x"></i>
+          </div>
         </div>
+        <div class="register-body">
+          <div class="register-card1">
+            <div class="column">
+              <label for="surname">Họ</label>
+              <input type="surname" name="" placeholder="Họ" id="surname" />
+            </div>
+            <div class="column">
+              <label for="name">Tên</label>
+              <input type="name" name="" placeholder="Tên" id="name" />
+            </div>
+          </div>
+          <div class="register-card2">
+            <div class="column">
+              <label for="accountName">Tên tài khoản</label>
+              <input
+                type="accountName"
+                name=""
+                placeholder="Tên tài khoản"
+                id="accountName"
+              />
+            </div>
+          </div>
+          <div class="register-card3">
+            <div class="column">
+              <label for="number">Số điện thoại</label>
+              <input type="text" placeholder="Số điện thoại" id="number" />
+            </div>
+            <div class="column">
+              <label for="email">Email</label>
+              <input type="email" name="" placeholder="Email" id="email2" />
+            </div>
+          </div>
+          <div class="register-card4">
+            <div class="column">
+              <label for="password1">Mật khẩu</label>
+              <input
+                type="password1"
+                name=""
+                placeholder="Mật khẩu"
+                id="password2"
+              />
+            </div>
+            <div class="column">
+              <label for="password2">Xác nhận mật khẩu</label>
+              <input
+                type="password2"
+                name=""
+                placeholder="Xác nhận mật khẩu"
+                id="confirmPassword"
+              />
+            </div>
+          </div>
+          <button class="btn js-register-btn">Đăng Ký</button>
+        </div>
+        <footer class="register-footer">
+          <p>Bạn đã có tài khoản? <a href="#" class="trybtn">Đăng nhập</a></p>
+        </footer>
+      </div>
     </div>
 
     <section class="promotions-section">
-        <h2 class="section-title">Tin tức - Khuyến mãi</h2>
-        <div class="promotions-grid">
-            <div class="promo-card">
-                <img src="./assets/img/News/0017918.webp" alt="Nhập TRUNGTHU Rinh quà đến 30K" class="promo-image">
-                <div class="promo-content">
-                    <h3 class="promo-title">Nhập TRUNGTHU, dù mê Đậu Xanh hay Thập Cẩm đều có quà xem phim đến 30K</h3>
-                    <p class="promo-date">29/08/2025</p>
-                </div>
-            </div>
-
-            <div class="promo-card">
-                <img src="./assets/img/News/0017855.webp" alt="Deal xem phim Lễ cực hời" class="promo-image">
-                <div class="promo-content">
-                    <h3 class="promo-title">Deal xem phim Lễ cực hời: Nhập mã YEUNUOC và 2THANG9 săn quà 50.000Đ</h3>
-                    <p class="promo-date">28/08/2025</p>
-                </div>
-            </div>
-
-            <div class="promo-card">
-                <img src="https://via.placeholder.com/400x200.png?text=DƯỠI+ĐÁY" alt="Khui túi mù Dưới Đáy Hồ cực xịn" class="promo-image">
-                <div class="promo-content">
-                    <h3 class="promo-title">Khui túi mù Dưới Đáy Hồ cực xịn: Săn secret Thanh Duy - Kay Trần ngay!</h3>
-                    <p class="promo-date">06/06/2025</p>
-                </div>
-            </div>
-
-            <div class="promo-card">
-                <img src="https://via.placeholder.com/400x200.png?text=U22+BHD" alt="Tin cực vui: U22 có thể mua vé BHD" class="promo-image">
-                <div class="promo-content">
-                    <h3 class="promo-title">Tin cực vui: U22 có thể mua vé BHD cực hời ngay trên MoMo!</h3>
-                    <p class="promo-date">12/05/2025</p>
-                </div>
-            </div>
-
-            <div class="promo-card">
-                <img src="https://via.placeholder.com/400x200.png?text=PEPSI" alt="Ưu đãi Pepsi miễn phí" class="promo-image">
-                <div class="promo-content">
-                    <h3 class="promo-title">Ưu đãi Pepsi miễn phí và giảm giá bắp tại rạp Galaxy Cine+ mới</h3>
-                    <p class="promo-date">25/04/2025</p>
-                </div>
-            </div>
-
-            <div class="promo-card">
-                <img src="https://via.placeholder.com/400x200.png?text=GALAXY+DRIVE" alt="Ưu đãi Pepsi miễn phí tại Galaxy Drive" class="promo-image">
-                <div class="promo-content">
-                    <h3 class="promo-title">Ưu đãi Pepsi miễn phí và giảm giá bắp tại rạp Galaxy Cine+ mới</h3>
-                    <p class="promo-date">25/04/2025</p>
-                </div>
-            </div>
-
-            <div class="promo-card">
-                <img src="https://via.placeholder.com/400x200.png?text=TÍCH+TEM" alt="Thử tài Tích tem đổi quà" class="promo-image">
-                <div class="promo-content">
-                    <h3 class="promo-title">Thử tài Tích tem đổi quà: Rinh ngàn voucher phim siêu đỉnh</h3>
-                    <p class="promo-date">17/04/2025</p>
-                </div>
-            </div>
-
-            <div class="promo-card">
-                <img src="https://via.placeholder.com/400x200.png?text=LOTTE+65K" alt="Ưu đãi hời tại rạp Lotte Cinema" class="promo-image">
-                <div class="promo-content">
-                    <h3 class="promo-title">Ưu đãi hời tại rạp Lotte Cinema mới: MoMo mời bạn vé chỉ 65.000Đ. Xem phim ngay!</h3>
-                    <p class="promo-date">17/03/2025</p>
-                </div>
-            </div>
-
-            <div class="promo-card">
-                <img src="https://via.placeholder.com/400x200.png?text=PEPSI" alt="Ưu đãi Pepsi miễn phí" class="promo-image">
-                <div class="promo-content">
-                    <h3 class="promo-title">Ưu đãi Pepsi miễn phí và giảm giá bắp tại rạp Galaxy Cine+ mới</h3>
-                    <p class="promo-date">25/04/2025</p>
-                </div>
-            </div>
-
-            <div class="promo-card">
-                <img src="https://via.placeholder.com/400x200.png?text=GALAXY+DRIVE" alt="Ưu đãi Pepsi miễn phí tại Galaxy Drive" class="promo-image">
-                <div class="promo-content">
-                    <h3 class="promo-title">Ưu đãi Pepsi miễn phí và giảm giá bắp tại rạp Galaxy Cine+ mới</h3>
-                    <p class="promo-date">25/04/2025</p>
-                </div>
-            </div>
-
-            <div class="promo-card">
-                <img src="https://via.placeholder.com/400x200.png?text=TÍCH+TEM" alt="Thử tài Tích tem đổi quà" class="promo-image">
-                <div class="promo-content">
-                    <h3 class="promo-title">Thử tài Tích tem đổi quà: Rinh ngàn voucher phim siêu đỉnh</h3>
-                    <p class="promo-date">17/04/2025</p>
-                </div>
-            </div>
-
-            <div class="promo-card">
-                <img src="https://via.placeholder.com/400x200.png?text=LOTTE+65K" alt="Ưu đãi hời tại rạp Lotte Cinema" class="promo-image">
-                <div class="promo-content">
-                    <h3 class="promo-title">Ưu đãi hời tại rạp Lotte Cinema mới: MoMo mời bạn vé chỉ 65.000Đ. Xem phim ngay!</h3>
-                    <p class="promo-date">17/03/2025</p>
-                </div>
-            </div>
+      <h2 class="section-title">Tin tức - Khuyến mãi</h2>
+      <div class="promotions-grid">
+        <div class="promo-card">
+          <img
+            src="./assets/img/News/new1.jpg"
+            alt="Nhập TRUNGTHU Rinh quà đến 30K"
+            class="promo-image"
+          />
+          <div class="promo-content">
+            <h3 class="promo-title">
+              Nhập TRUNGTHU, dù mê Đậu Xanh hay Thập Cẩm đều có quà xem phim đến
+              30K
+            </h3>
+            <p class="promo-date">29/08/2025</p>
+          </div>
         </div>
-        <div class="view-more-container">
-            <button class="view-more-btn">Xem thêm</button>
+
+        <div class="promo-card">
+          <img
+            src="./assets/img/News/new2.jpg"
+            alt="Deal xem phim Lễ cực hời"
+            class="promo-image"
+          />
+          <div class="promo-content">
+            <h3 class="promo-title">
+              Deal xem phim Lễ cực hời: Nhập mã YEUNUOC và 2THANG9 săn quà
+              50.000Đ
+            </h3>
+            <p class="promo-date">28/08/2025</p>
+          </div>
         </div>
+
+        <div class="promo-card">
+          <img
+            src="./assets/img/News/new3.jpg"
+            alt="Khui túi mù Dưới Đáy Hồ cực xịn"
+            class="promo-image"
+          />
+          <div class="promo-content">
+            <h3 class="promo-title">
+              Khui túi mù Dưới Đáy Hồ cực xịn: Săn secret Thanh Duy - Kay Trần
+              ngay!
+            </h3>
+            <p class="promo-date">06/06/2025</p>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <img
+            src="./assets/img/News/new4.webp"
+            alt="Tin cực vui: U22 có thể mua vé BHD"
+            class="promo-image"
+          />
+          <div class="promo-content">
+            <h3 class="promo-title">
+              Tin cực vui: U22 có thể mua vé BHD cực hời ngay trên MoMo!
+            </h3>
+            <p class="promo-date">12/05/2025</p>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <img
+            src=".//assets/img/News/new5.jpg"
+            alt="Ưu đãi Pepsi miễn phí"
+            class="promo-image"
+          />
+          <div class="promo-content">
+            <h3 class="promo-title">
+              Ưu đãi Pepsi miễn phí và giảm giá bắp tại rạp Galaxy Cine+ mới
+            </h3>
+            <p class="promo-date">25/04/2025</p>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <img
+            src="./assets/img/News/new6.jpg"
+            alt="Ưu đãi Pepsi miễn phí tại Galaxy Drive"
+            class="promo-image"
+          />
+          <div class="promo-content">
+            <h3 class="promo-title">
+              Ưu đãi Pepsi miễn phí và giảm giá bắp tại rạp Galaxy Cine+ mới
+            </h3>
+            <p class="promo-date">25/04/2025</p>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <img
+            src="./assets/img/News/new7.jpg"
+            alt="Thử tài Tích tem đổi quà"
+            class="promo-image"
+          />
+          <div class="promo-content">
+            <h3 class="promo-title">
+              Thử tài Tích tem đổi quà: Rinh ngàn voucher phim siêu đỉnh
+            </h3>
+            <p class="promo-date">17/04/2025</p>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <img
+            src="./assets/img/News/new8.jpg"
+            alt="Ưu đãi hời tại rạp Lotte Cinema"
+            class="promo-image"
+          />
+          <div class="promo-content">
+            <h3 class="promo-title">
+              Ưu đãi hời tại rạp Lotte Cinema mới: MoMo mời bạn vé chỉ 65.000Đ.
+              Xem phim ngay!
+            </h3>
+            <p class="promo-date">17/03/2025</p>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <img
+            src="https://via.placeholder.com/400x200.png?text=PEPSI"
+            alt="Ưu đãi Pepsi miễn phí"
+            class="promo-image"
+          />
+          <div class="promo-content">
+            <h3 class="promo-title">
+              Ưu đãi Pepsi miễn phí và giảm giá bắp tại rạp Galaxy Cine+ mới
+            </h3>
+            <p class="promo-date">25/04/2025</p>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <img
+            src="https://via.placeholder.com/400x200.png?text=GALAXY+DRIVE"
+            alt="Ưu đãi Pepsi miễn phí tại Galaxy Drive"
+            class="promo-image"
+          />
+          <div class="promo-content">
+            <h3 class="promo-title">
+              Ưu đãi Pepsi miễn phí và giảm giá bắp tại rạp Galaxy Cine+ mới
+            </h3>
+            <p class="promo-date">25/04/2025</p>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <img
+            src="https://via.placeholder.com/400x200.png?text=TÍCH+TEM"
+            alt="Thử tài Tích tem đổi quà"
+            class="promo-image"
+          />
+          <div class="promo-content">
+            <h3 class="promo-title">
+              Thử tài Tích tem đổi quà: Rinh ngàn voucher phim siêu đỉnh
+            </h3>
+            <p class="promo-date">17/04/2025</p>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <img
+            src="https://via.placeholder.com/400x200.png?text=LOTTE+65K"
+            alt="Ưu đãi hời tại rạp Lotte Cinema"
+            class="promo-image"
+          />
+          <div class="promo-content">
+            <h3 class="promo-title">
+              Ưu đãi hời tại rạp Lotte Cinema mới: MoMo mời bạn vé chỉ 65.000Đ.
+              Xem phim ngay!
+            </h3>
+            <p class="promo-date">17/03/2025</p>
+          </div>
+        </div>
+      </div>
+      <div class="view-more-container">
+        <button class="view-more-btn">Xem thêm</button>
+      </div>
     </section>
 
     <div class="footer">
-      <div class="container-fluid" style="padding: 50px 50px 30px 50px;">
+      <div class="container-fluid" style="padding: 50px 50px 30px 50px">
         <div class="row">
-
           <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
             <a href="./index.html">
-              <img src="./assets/img/logo.webp" alt="Logo" class="footer-logo-img">
+              <img
+                src="./assets/img/logo.webp"
+                alt="Logo"
+                class="footer-logo-img"
+              />
             </a>
             <p class="footer-company-name">NHÀ CỦA TUẤN ANH</p>
-            <p><i class="fa-solid fa-location-dot"></i> 69 Thụy Hương, Kiến thụy, Hải z phòng</p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i> 69 Thụy Hương, Kiến thụy,
+              Hải z phòng
+            </p>
             <p><i class="fa-solid fa-phone"></i> Hotline: 0977 934 745</p>
-            <p><i class="fa-solid fa-envelope"></i> Email: Buituananh3101@gmail.com</p>
+            <p>
+              <i class="fa-solid fa-envelope"></i> Email:
+              Buituananh3101@gmail.com
+            </p>
           </div>
 
           <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
             <h5>Giới thiệu</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link">Về chúng tôi</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link">Tuyển dụng</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link">Liên hệ quảng cáo</a></li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link">Về chúng tôi</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link">Tuyển dụng</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link">Liên hệ quảng cáo</a>
+              </li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
             <h5>Điều khoản</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link">Điều khoản chung</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link">Chính sách bảo mật</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link">Chính sách vé</a></li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link">Điều khoản chung</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link">Chính sách bảo mật</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link">Chính sách vé</a>
+              </li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
             <h5>Hỗ trợ</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link">FAQ</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link">Góp ý</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link">Group Booking</a></li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link">FAQ</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link">Góp ý</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link">Group Booking</a>
+              </li>
             </ul>
           </div>
 
@@ -296,9 +432,9 @@
             </div>
           </div>
         </div>
-        
-        <hr class="footer-divider">
-        
+
+        <hr class="footer-divider" />
+
         <div class="row footer-bottom-row">
           <div class="col-md-6 mb-3">
             <h5>Chấp nhận thanh toán</h5>
@@ -313,7 +449,7 @@
           <div class="col-md-6 mb-3 text-md-end footer-copyright-text">
             <p>
               &copy; 2025 Trung Tâm Chiếu Phim Quốc Gia.
-              <br>
+              <br />
               Giấy chứng nhận ĐKKD số: 0101659783
             </p>
           </div>
@@ -325,6 +461,5 @@
     <script src="assets/js/login.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/slide.js"></script>
-</body>
-
+  </body>
 </html>
