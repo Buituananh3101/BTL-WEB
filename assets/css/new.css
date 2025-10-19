@@ -86,7 +86,7 @@ body {
 /* --- "View More" Button --- */
 .view-more-container {
     text-align: center;
-    margin-top: 2.5rem;
+    margin: 2.5rem;
 }
 
 .view-more-btn {
