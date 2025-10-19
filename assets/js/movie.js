@@ -1,73 +1,68 @@
+/* NỘI DUNG MỚI CHO FILE: assets/js/movie.js
+  File này BÂY GIỜ chỉ còn 1 nhiệm vụ: 
+  Xử lý BẬT/TẮT popup trailer.
+*/
+
+// --- 1. Xử lý Trailer Popup (Đã sửa lại) ---
+
+// Phải bọc trong DOMContentLoaded để đảm bảo các thẻ #trailerPopup, #trailerFrame... đã tồn tại
 document.addEventListener("DOMContentLoaded", () => {
-  // --- 1. Xử lý Trailer Popup ---
-  const trailerBtn = document.querySelector(".trailer-btn");
+  const trailerBtn = document.getElementById("trailer-btn"); // Dùng ID
   const trailerPopup = document.getElementById("trailerPopup");
-  const closeBtn = document.querySelector(".close-btn");
   const trailerFrame = document.getElementById("trailerFrame");
 
-  if (trailerBtn) {
-    const trailerLink = trailerBtn.getAttribute("data-link");
-
+  if (trailerBtn && trailerPopup && trailerFrame) {
     trailerBtn.addEventListener("click", () => {
-      // Cập nhật link cho iframe VÀ thêm "?autoplay=1" để tự động phát
-      trailerFrame.src = `${trailerLink}?autoplay=1`;
-      trailerPopup.style.display = "flex";
+      // Lấy link TẠI THỜI ĐIỂM CLICK
+      // (Vì detail-page.js cần thời gian để "đổ" link vào)
+      const trailerLink = trailerBtn.getAttribute("data-link");
+
+      if (trailerLink) {
+        // Thêm "?autoplay=1" để tự động phát
+        trailerFrame.src = `${trailerLink}?autoplay=1`;
+        trailerPopup.style.display = "flex";
+      } else {
+        console.error("Không tìm thấy data-link của trailer");
+      }
     });
 
-    closeBtn.addEventListener("click", () => {
-      trailerPopup.style.display = "none";
-      // Dừng video khi đóng
-      trailerFrame.src = "";
-    });
-
-    // Đóng popup khi bấm ra ngoài
+    // Đóng popup khi bấm ra ngoài (giữ logic cũ của bạn)
     trailerPopup.addEventListener("click", (e) => {
       if (e.target === trailerPopup) {
-        trailerPopup.style.display = "none";
-        trailerFrame.src = "";
+        closeTrailer(); // Gọi hàm closeTrailer() toàn cục
       }
     });
   }
-
-  // --- 2. Xử lý chọn ngày ---
-  const dateButtons = document.querySelectorAll(".date-selector .date");
-  dateButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      // Xóa class 'active' khỏi nút đang active
-      const currentActive = document.querySelector(".date.active");
-      if (currentActive) {
-        currentActive.classList.remove("active");
-      }
-      // Thêm class 'active' cho nút vừa bấm
-      button.classList.add("active");
-    });
-  });
-
-  // --- 3. XỬ LÝ ĐẶT VÉ (PHẦN QUAN TRỌNG NHẤT) ---
-  const timeButtons = document.querySelectorAll(".time-slots button");
-  const movieTitle = document.querySelector(".movie-title").textContent;
-  const moviePoster = document.querySelector(".poster img").src;
-
-  timeButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      // 1. Lấy ngày đang được chọn
-      const activeDateEl = document.querySelector(".date.active");
-      const day = activeDateEl.querySelector(".day").textContent;
-      const label = activeDateEl.querySelector("span:not(.day)").textContent;
-      const selectedDate = `${day} (${label})`;
-
-      // 2. Lấy giờ vừa bấm
-      const selectedTime = button.textContent;
-
-      // 3. Lưu tất cả vào localStorage
-      localStorage.setItem("selectedMovie", movieTitle);
-      localStorage.setItem("selectedPoster", moviePoster);
-      localStorage.setItem("selectedDate", selectedDate);
-      localStorage.setItem("selectedShowtime", selectedTime);
-
-      // 4. Chuyển hướng sang trang đặt ghế
-      // (Giả sử seat.html nằm cùng cấp với movie_thanhguomdietquy.html)
-      window.location.href = "seat.html";
-    });
-  });
 });
+
+/*
+  Hàm này phải để ở BÊN NGOÀI (toàn cục/global)
+  vì nó được gọi bằng "onclick="closeTrailer()"" trực tiếp từ HTML
+*/
+function closeTrailer() {
+  const trailerPopup = document.getElementById("trailerPopup");
+  const trailerFrame = document.getElementById("trailerFrame");
+
+  if (trailerPopup && trailerFrame) {
+    trailerPopup.style.display = "none";
+    // Dừng video khi đóng (tránh chạy nền)
+    trailerFrame.src = "";
+  }
+}
+
+// --- 2. Xử lý chọn ngày ---
+/*
+  ĐÃ XÓA PHẦN NÀY.
+  Lý do: File "detail-page.js" đã tự động "vẽ" các nút ngày
+  và đã bao gồm logic xử lý 'active' (in đậm) cho nút được chọn.
+  Nếu giữ lại code cũ sẽ gây xung đột.
+*/
+
+// --- 3. XỬ LÝ ĐẶT VÉ (PHẦN QUAN TRỌNG NHẤT) ---
+/*
+  ĐÃ XÓA PHẦN NÀY.
+  Lý do: File "detail-page.js" đã tự động "vẽ" các nút giờ
+  và gán sự kiện click cho chúng (chuyển sang trang seat.html
+  với ID phim, ngày, giờ trên URL). 
+  Code cũ này dùng localStorage và không còn phù hợp.
+*/

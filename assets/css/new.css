@@ -35,7 +35,7 @@ body {
 /* --- Grid Layout for Cards --- */
 .promotions-grid {
    display: grid;
-   grid-template-columns: repeat(auto-fit, 280px);
+   grid-template-columns: repeat(4, 280px);
    gap: 1.5rem; 
    justify-content: center;
 }

@@ -1,23 +1,41 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 🎬 Load thông tin phim từ localStorage
-  const title = localStorage.getItem("selectedMovie") || "Phim đang chiếu";
-  const poster =
-    localStorage.getItem("selectedPoster") || "./assets/img/default.jpg";
-  const date = localStorage.getItem("selectedDate") || "Chưa chọn ngày";
-  const time = localStorage.getItem("selectedShowtime") || "Chưa chọn";
+  // ===== BẮT ĐẦU KHỐI CODE MỚI =====
+  // 🎬 Lấy thông tin từ URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const movieId = urlParams.get('id');
+  const date = urlParams.get('date');
+  const time = urlParams.get('time');
+  
+  if (!movieId || !date || !time || typeof ALL_MOVIES === 'undefined') {
+      alert("Lỗi: Thiếu thông tin phim, ngày chiếu, suất chiếu hoặc dữ liệu phim!");
+      window.location.href = 'index.html';
+      return;
+  }
 
-  // Cập nhật thông tin lên sidebar
-  document.querySelector(".sidebar h2").textContent = title;
-  document.querySelector(".sidebar .poster img").src = poster;
+  // 2. Tìm phim trong CSDL
+  const movie = ALL_MOVIES.find(m => m.id === movieId);
 
-  // Lấy 2 dòng <p> đầu tiên trong sidebar
+  if (!movie) {
+      alert(`Lỗi: Không tìm thấy phim với ID: ${movieId}`);
+      window.location.href = 'index.html';
+      return;
+  }
+
+  // 3. Cập nhật thông tin lên sidebar
+  document.querySelector(".sidebar h2").textContent = movie.title;
+  document.querySelector(".sidebar .poster img").src = movie.poster;
+  document.querySelector("title").textContent = `Đặt vé: ${movie.title}`;
+
+  // 4. Cập nhật ngày VÀ suất chiếu
   const paragraphs = document.querySelectorAll(".sidebar p");
   if (paragraphs.length >= 2) {
     paragraphs[0].innerHTML = `Ngày chiếu: <strong>${date}</strong>`;
     paragraphs[1].innerHTML = `Suất chiếu: <strong>${time}</strong>`;
   }
+  // ===== KẾT THÚC KHỐI CODE MỚI =====
 
-  // 💺 Xử lý chọn ghế
+
+  // 💺 Xử lý chọn ghế (PHẦN NÀY GIỮ NGUYÊN)
   const seatMap = document.getElementById("seatMap");
   const countSpan = document.getElementById("count");
   const totalSpan = document.getElementById("total");
@@ -39,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (seat.classList.contains("selected")) {
       selectedSeats.push(seatId);
     } else {
-      selectedSeats = selectedSeats.filter((s) => s !== seatId);
+      selectedSeats = selectedSeats.filter((s) => s !== seatId.dataset.id); // Sửa lỗi logic nhỏ
     }
 
     calculateTotal();
@@ -52,7 +70,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let total = 0;
     selectedSeats.forEach((id) => {
       const seatEl = document.querySelector(`.seat[data-id='${id}']`);
-      total += seatEl.classList.contains("vip") ? 100000 : 50000;
+      if (seatEl) { // Thêm kiểm tra
+        total += seatEl.classList.contains("vip") ? 100000 : 50000;
+      }
     });
 
     totalSpan.textContent = total.toLocaleString("vi-VN") + "₫";
@@ -69,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const total = calculateTotal();
     payTotal.textContent = total.toLocaleString("vi-VN") + "₫";
 
-    // Đảm bảo đường dẫn này CHÍNH XÁC
     qrImage.src = "./assets/img/qr.png"; 
   });
 
