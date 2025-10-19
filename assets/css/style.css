@@ -335,34 +335,135 @@ body {
     padding: 15px;
 }
 
-/* FOOTER */
-/* .footer ul li {
-    list-style-type: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0px;
-} */
-.footer{
-    background-color: #000000;
-}
-.footer a {/* text footer */
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
-    text-align: left;
-}
-.footer a:hover {
-    color: black;
-}
-.cinema-info p {
-    padding: 10px;
-}
-.movie-type .nav-link {
-    color: #1A1D23;
-}
-.footer-logo img,
-.footer-logo p {
-    height: 10%;
-    margin-left: 50px;
+/* Footer */
+
+.footer {
+    background-color: #10141B; /* Đồng bộ màu với header */
+    color: #bbb; /* Màu chữ chung, dễ đọc */
+    padding-top: 20px;
+    width: 100%;
 }
 
-/* PRICE */
+.footer h5 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.footer-logo-img {
+    display: block; /* Để nó là 1 block riêng */
+    width: 300px; 
+    margin-bottom: 15px;
+}
+
+.footer-company-name {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Icon bên cạnh text (địa chỉ, phone) */
+.footer p i {
+    width: 20px;
+    color: #FDA6C4; /* Dùng màu hồng chủ đạo của web bạn */
+}
+
+/* Danh sách link */
+.footer .nav-link {
+    padding: 0 0 10px 0; /* Chỉ cần đệm dưới */
+    font-size: 0.9rem;
+    color: #bbb; /* Màu link mặc định */
+    background: none !important; /* Ghi đè bootstrap */
+    transition: color 0.2s ease;
+}
+
+.footer .nav-link:hover {
+    color: #fff; /* Hover sáng lên */
+}
+
+/* Icon mạng xã hội */
+.footer-social-icons a {
+    color: #bbb;
+    font-size: 1.5rem; /* Kích thước icon */
+    margin-right: 15px;
+    transition: color 0.2s ease;
+}
+
+.footer-social-icons a:hover {
+    color: #FDA6C4; /* Đổi màu khi hover */
+}
+
+/* Nút tải ứng dụng */
+.footer-app-buttons {
+    display: flex;
+    flex-direction: column; /* Xếp chồng 2 nút */
+    gap: 15px; /* Khoảng cách giữa 2 nút */
+}
+
+.footer-app-buttons .app-button {
+    display: flex;
+    align-items: center;
+    background-color: #2a2e35; /* Nền nút tối */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.footer-app-buttons .app-button:hover {
+    background-color: #444;
+}
+
+.footer-app-buttons .app-button i {
+    font-size: 2rem; /* Icon app to */
+    margin-right: 10px;
+}
+
+.footer-app-buttons .app-button span {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.footer-app-buttons .app-button span strong {
+    font-size: 1rem;
+}
+
+/* Đường kẻ ngang */
+.footer-divider {
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Hàng cuối (Thanh toán & Copyright) */
+.footer-bottom-row {
+    align-items: center;
+}
+
+.footer-payment-icons .payment-icon {
+    /* Đây là style tạm thời, bạn nên thay bằng <img> */
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #10141B;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.footer-copyright-text p {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 0;
+    line-height: 1.5;
+}

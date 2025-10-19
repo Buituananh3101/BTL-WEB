@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thanh Gươm Diệt Quỷ: Vô Hạn Thành (2025)</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" /> 
+  <link rel="stylesheet" href="assets/css/menu.css" />
+  <link rel="stylesheet" href="./assets/css/seat.css">
+</head>
+
+  <body>
+
+    <div id="header">
+      <div class="nav-logo">
+        <a href="./index.html">
+          <img src="./assets/img/logo.webp" alt="" />
+        </a>
+        <div class="name">
+          <p>TRUNG TÂM CHIẾU PHIM QUỐC GIA</p>
+          <p>National Cinema Center</p>
+        </div>
+      </div>
+
+      <div class="nav-menu">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+      </div>
+
+      <div class="nav-layout">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="#"
+              style="border-radius: 8px; color: black"
+              >Trang chủ</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="new.html">Tin tức</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Datve/ticket.html">Đặt vé</a>
+          </li>
+        </ul>
+        <div></div>
+        <div class="login-user"></div>
+      </div>
+    </div>
+
+    <div class="app">
+      <main class="layout">
+        <!-- Thông tin phim -->
+        <aside class="sidebar">
+          <div class="poster">
+            <img src="./assets/img/logo.webp" alt="Poster" />
+          </div>
+          
+          <h2>Tên phim</h2> 
+          
+          <p>Ngày chiếu: <strong>Chưa chọn</strong></p>
+          <p>Suất chiếu: <strong>Chưa chọn</strong></p>
+
+          <div class="summary">
+            <p><span id="count">0</span> ghế • <span id="total">0₫</span></p>
+            <button id="payBtn" disabled>Thanh toán</button>
+          </div>
+
+          <div class="legend">
+            <span class="seat normal"></span> Thường (50k)
+            <span class="seat vip"></span> VIP (100k)
+            <span class="seat booked"></span> Đã đặt
+            <span class="seat selected"></span> Đang chọn
+          </div>
+        </aside>
+
+        <!-- Vùng ghế -->
+        <section class="cinema">
+          <div class="screen">
+            <img src="./assets/img/screen.webp" alt="Màn hình chiếu" />
+          </div>
+
+          <div id="seatMap" class="seat-map">
+            <script>
+              const rows = "ABCDEFGHIJK".split("");
+              for (const row of rows) {
+                document.write(`<div class='row'>`);
+                for (let i = 1; i <= 14; i++) {
+                  // VIP toàn bộ hình chữ nhật D5→H10
+                  const vipRows = ["D", "E", "F", "G", "H"];
+                  const vipCols = [5, 6, 7, 8, 9, 10];
+                  const isVip = vipRows.includes(row) && vipCols.includes(i);
+
+                  const cls = isVip ? "seat vip" : "seat normal";
+                  document.write(
+                    `<div class='${cls}' data-id='${row + i}'>${row + i}</div>`
+                  );
+                }
+                document.write(`</div>`);
+              }
+            </script>
+          </div>
+        </section>
+      </main>
+
+      <!-- Overlay Thanh toán -->
+      <div id="overlay" class="overlay hidden">
+        <div class="modal">
+          <button id="closePay" class="close">&times;</button>
+          <h2>Xác nhận thanh toán</h2>
+
+          <ul id="selectedList" class="seat-list"></ul>
+
+          <div class="total">
+            <span>Tổng cộng:</span> <strong id="payTotal">0₫</strong>
+          </div>
+
+          <div class="qr">
+            <h4>Quét mã để thanh toán</h4>
+            <img id="qrImage" src="./assets/img/qr.png" alt="QR" />
+          </div>
+
+          <button id="confirmPay" class="confirm">Hoàn tất</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/seat.js"></script>
+  </body>
+</html>

@@ -57,7 +57,7 @@
 }
 
 .movie-details-page .poster img {
-  width: 340px;
+  width: 400px;
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease;

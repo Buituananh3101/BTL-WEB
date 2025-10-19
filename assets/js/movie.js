@@ -1,41 +1,73 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const popup = document.getElementById("trailerPopup");
-  const frame = document.getElementById("trailerFrame");
+  // --- 1. Xử lý Trailer Popup ---
+  const trailerBtn = document.querySelector(".trailer-btn");
+  const trailerPopup = document.getElementById("trailerPopup");
+  const closeBtn = document.querySelector(".close-btn");
+  const trailerFrame = document.getElementById("trailerFrame");
 
-  // Khi bấm nút trailer
-  document.querySelectorAll(".trailer-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const link = btn.dataset.link;
-      frame.src = link + "?autoplay=1&rel=0";
-      popup.style.display = "flex";
+  if (trailerBtn) {
+    const trailerLink = trailerBtn.getAttribute("data-link");
+
+    trailerBtn.addEventListener("click", () => {
+      // Cập nhật link cho iframe VÀ thêm "?autoplay=1" để tự động phát
+      trailerFrame.src = `${trailerLink}?autoplay=1`;
+      trailerPopup.style.display = "flex";
+    });
+
+    closeBtn.addEventListener("click", () => {
+      trailerPopup.style.display = "none";
+      // Dừng video khi đóng
+      trailerFrame.src = "";
+    });
+
+    // Đóng popup khi bấm ra ngoài
+    trailerPopup.addEventListener("click", (e) => {
+      if (e.target === trailerPopup) {
+        trailerPopup.style.display = "none";
+        trailerFrame.src = "";
+      }
+    });
+  }
+
+  // --- 2. Xử lý chọn ngày ---
+  const dateButtons = document.querySelectorAll(".date-selector .date");
+  dateButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Xóa class 'active' khỏi nút đang active
+      const currentActive = document.querySelector(".date.active");
+      if (currentActive) {
+        currentActive.classList.remove("active");
+      }
+      // Thêm class 'active' cho nút vừa bấm
+      button.classList.add("active");
     });
   });
 
-  // Đóng popup
-  document.querySelectorAll(".close-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      popup.style.display = "none";
-      frame.src = "";
-    });
-  });
-
-  // Chọn ngày
-  const dateButtons = document.querySelectorAll(".date");
-  dateButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      dateButtons.forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
-    });
-  });
-
-  // Chọn giờ chiếu
+  // --- 3. XỬ LÝ ĐẶT VÉ (PHẦN QUAN TRỌNG NHẤT) ---
   const timeButtons = document.querySelectorAll(".time-slots button");
-  timeButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      timeButtons.forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
-      // Sau này có thể thêm chuyển hướng sang trang chọn ghế
-      // window.location.href = "chon-ghe.html";
+  const movieTitle = document.querySelector(".movie-title").textContent;
+  const moviePoster = document.querySelector(".poster img").src;
+
+  timeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // 1. Lấy ngày đang được chọn
+      const activeDateEl = document.querySelector(".date.active");
+      const day = activeDateEl.querySelector(".day").textContent;
+      const label = activeDateEl.querySelector("span:not(.day)").textContent;
+      const selectedDate = `${day} (${label})`;
+
+      // 2. Lấy giờ vừa bấm
+      const selectedTime = button.textContent;
+
+      // 3. Lưu tất cả vào localStorage
+      localStorage.setItem("selectedMovie", movieTitle);
+      localStorage.setItem("selectedPoster", moviePoster);
+      localStorage.setItem("selectedDate", selectedDate);
+      localStorage.setItem("selectedShowtime", selectedTime);
+
+      // 4. Chuyển hướng sang trang đặt ghế
+      // (Giả sử seat.html nằm cùng cấp với movie_thanhguomdietquy.html)
+      window.location.href = "seat.html";
     });
   });
 });
