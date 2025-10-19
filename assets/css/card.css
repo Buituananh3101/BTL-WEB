@@ -10,7 +10,7 @@ body {
 /* --- Kiểu dáng cho Custom Movie Card --- */
 .custom-movie-card {
     width: 235px; /* Giữ nguyên kích thước bạn đã cung cấp */
-    height: 500px;
+    height: 530px;
     background-color: #1e1e1e;
     border-radius: 8px; /* Bo tròn các góc của card */
     overflow: hidden; /* Quan trọng: Ẩn đi phần ảnh bị phóng to tràn ra ngoài */

@@ -48,7 +48,8 @@
 }
 
 .nav-logo {
-    height: 50px;
+    margin-top: 4px;
+    height: 100px;
     min-width: 100px;
     display: flex;
 
