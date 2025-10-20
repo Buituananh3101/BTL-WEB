@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Đang tải thông tin phim...</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đang tải thông tin phim...</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.webp"
+      type="image/x-icon"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" /> 
-  <link rel="stylesheet" href="assets/css/menu.css" />
-  <link rel="stylesheet" href="./assets/css/movie.css" />
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="./assets/css/movie.css" />
+  </head>
 
   <div id="header">
-
-      <div class="nav-logo">
-        <a href="./index.html">
-          <img src="./assets/img/logo.webp" alt="">
-        </a>
-        <div class="name">
-          <p></p>
-          <p></p>
-        </div>
+    <div class="nav-logo">
+      <a href="./index.html">
+        <img src="./assets/img/logo.webp" alt="" />
+      </a>
+      <div class="name">
+        <p></p>
+        <p></p>
       </div>
-      
-      <div class="nav-menu">
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-      </div>
+    </div>
 
+<<<<<<< HEAD
       <div class="nav-layout">
         <ul class="nav nav-pills">
           <li class="nav-item">
@@ -40,11 +44,34 @@
           </li>
         </ul>
       </div>
+=======
+    <div class="nav-menu">
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+    </div>
+>>>>>>> 13f2f3a56222a7d277507b73377cfc2689954072
 
-    </div>  
+    <div class="nav-layout">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="index.html"
+            style="border-radius: 8px; color: black"
+            >Trang chủ</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="new.html">Tin tức</a>
+        </li>
+        <li>
+          <a class="nav-link" href="Datve/ticket.html">Giá vé</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <body class="movie-details-page">
-
     <div class="background">
       <img id="movie-background-img" src="" alt="Background" />
     </div>
@@ -81,8 +108,8 @@
           <button id="trailer-btn" class="trailer-btn" data-link="">
             Xem trailer
           </button>
-          </div>
-        
+        </div>
+
         <div class="trailer-popup" id="trailerPopup">
           <div class="trailer-content">
             <span class="close-btn" onclick="closeTrailer()">&times;</span>
@@ -102,13 +129,11 @@
         <div class="schedule">
           <h3 id="schedule-title">Lịch chiếu</h3>
 
-          <div class="date-selector" id="dateSelector">
-          </div>
+          <div class="date-selector" id="dateSelector"></div>
 
           <div class="showtime" id="showtimeSection">
             <h4 id="showtime-format"></h4>
-            <div class="time-slots" id="timeSlots">
-            </div>
+            <div class="time-slots" id="timeSlots"></div>
           </div>
         </div>
       </div>
