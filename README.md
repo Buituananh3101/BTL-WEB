@@ -56,7 +56,7 @@ Trang Chủ
 │ ├── Xem Trailer
 │ └── Chọn Ngày và Giờ
 │     └── Chọn Ghế
-│     └── Thanh Toán
+│         └── Thanh Toán
 ├── Phim Sắp Chiếu
 ├── Tin Tức
 ├── Giới Thiệu
