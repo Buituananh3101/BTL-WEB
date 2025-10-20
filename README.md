@@ -48,7 +48,7 @@ Website Quản lý Bán vé Rạp Chiếu Phim được xây dựng nhằm mang 
 * Momo Cinemas
 * CGV Cinemas Việt Nam
 
-## Cấu trúc thư mục đề xuất
+## Cấu trúc cây thư mục
 
 ```
 📁 assets
