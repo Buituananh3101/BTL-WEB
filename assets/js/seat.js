@@ -2,23 +2,25 @@ document.addEventListener("DOMContentLoaded", () => {
   // ===== BẮT ĐẦU KHỐI CODE MỚI =====
   // 🎬 Lấy thông tin từ URL
   const urlParams = new URLSearchParams(window.location.search);
-  const movieId = urlParams.get('id');
-  const date = urlParams.get('date');
-  const time = urlParams.get('time');
-  
-  if (!movieId || !date || !time || typeof ALL_MOVIES === 'undefined') {
-      alert("Lỗi: Thiếu thông tin phim, ngày chiếu, suất chiếu hoặc dữ liệu phim!");
-      window.location.href = 'index.html';
-      return;
+  const movieId = urlParams.get("id");
+  const date = urlParams.get("date");
+  const time = urlParams.get("time");
+
+  if (!movieId || !date || !time || typeof ALL_MOVIES === "undefined") {
+    alert(
+      "Lỗi: Thiếu thông tin phim, ngày chiếu, suất chiếu hoặc dữ liệu phim!"
+    );
+    window.location.href = "index.html";
+    return;
   }
 
   // 2. Tìm phim trong CSDL
-  const movie = ALL_MOVIES.find(m => m.id === movieId);
+  const movie = ALL_MOVIES.find((m) => m.id === movieId);
 
   if (!movie) {
-      alert(`Lỗi: Không tìm thấy phim với ID: ${movieId}`);
-      window.location.href = 'index.html';
-      return;
+    alert(`Lỗi: Không tìm thấy phim với ID: ${movieId}`);
+    window.location.href = "index.html";
+    return;
   }
 
   // 3. Cập nhật thông tin lên sidebar
@@ -33,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
     paragraphs[1].innerHTML = `Suất chiếu: <strong>${time}</strong>`;
   }
   // ===== KẾT THÚC KHỐI CODE MỚI =====
-
 
   // 💺 Xử lý chọn ghế (PHẦN NÀY GIỮ NGUYÊN)
   const seatMap = document.getElementById("seatMap");
@@ -52,12 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!seat || seat.classList.contains("booked")) return;
 
     seat.classList.toggle("selected");
-
     const seatId = seat.dataset.id;
+
     if (seat.classList.contains("selected")) {
       selectedSeats.push(seatId);
     } else {
-      selectedSeats = selectedSeats.filter((s) => s !== seatId.dataset.id); // Sửa lỗi logic nhỏ
+      selectedSeats = selectedSeats.filter((s) => s !== seatId);
     }
 
     calculateTotal();
@@ -70,7 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let total = 0;
     selectedSeats.forEach((id) => {
       const seatEl = document.querySelector(`.seat[data-id='${id}']`);
-      if (seatEl) { // Thêm kiểm tra
+      if (seatEl) {
+        // Thêm kiểm tra
         total += seatEl.classList.contains("vip") ? 100000 : 50000;
       }
     });
@@ -89,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const total = calculateTotal();
     payTotal.textContent = total.toLocaleString("vi-VN") + "₫";
 
-    qrImage.src = "./assets/img/qr.png"; 
+    qrImage.src = "./assets/img/qr.png";
   });
 
   // ❌ Đóng overlay
