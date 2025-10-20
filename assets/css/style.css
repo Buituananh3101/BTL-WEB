@@ -5,10 +5,15 @@
 }
 
 /* Fix thanh ngang */
+/* Đặt khối này ở đầu file, thay thế cho cả 2 khối body cũ */
 body {
-  overflow-x: hidden;
-  width: 100%; 
-    /* Đảm bảo body không bị co lại dưới 100% */
+    overflow-x: hidden;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 /*  */
@@ -31,19 +36,7 @@ html {
     margin: 10px 10px 10px 0;
 }
 
-#header {
-    height: 50px;
-    background-color: #10141B;
-    /* position: fixed; */
-    /* display: flex; */
-    /* z-index: 1000; */
-    /* top: 0; */
-    /* right: 0; */
-    /* width: 100%; */
-    /* align-items: center; */
-    justify-content: space-between; /* 2. Đẩy 2 nhóm con ra 2 phía */
 
-}
 
 
 
@@ -306,17 +299,8 @@ html {
 
 
 /* BODY */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    /* background-color: #10141b; */
-    background-color: #fff;
-    /* background-image: url("../background/patel-5.webp"); */
-    /* background-image: linear-gradient(#F9cadb,#FDA6C4); */
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 
-}
+    
 .section {
     /* background-color: #10141b; */
     /* background-color: #fff; */
@@ -452,7 +436,7 @@ body {
 .footer-payment-icons .payment-icon {
     /* Đây là style tạm thời, bạn nên thay bằng <img> */
     display: inline-block;
-    padding: 5px 10px;
+    padding: 5px 10px;  
     background-color: #fff;
     color: #10141B;
     border-radius: 4px;

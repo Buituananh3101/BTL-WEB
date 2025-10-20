@@ -1,0 +1,154 @@
+
+#about-page-content {
+  --primary-color: #d90000;
+  --button-bg: #ffe5e9;
+  --button-text: #c02a4e;
+  --text-dark: #222;
+  --text-light: #f5f5f5;
+  --container-width: 1140px;
+  --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-dark: 0 6px 16px rgba(0, 0, 0, 0.15);
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- Phần Hero --- */
+#about-page-content .hero-section {
+  height: 800px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/gt5.jpg"); */
+  /* background-image: linear-gradient(#F9cadb 20%,#FDA6C4); */
+  background-image: url("../background/troidem.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--text-light);
+}
+
+#about-page-content .hero-content h1 {
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
+}
+
+/* --- Dải thông tin chung --- */
+#about-page-content .info-section-strip {
+  padding: 80px 20px;
+  overflow: hidden;
+}
+
+#about-page-content .info-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* --- Hộp Văn bản & Hình ảnh --- */
+#about-page-content .info-image-placeholder,
+#about-page-content .info-text-box {
+  flex: 1;
+}
+
+#about-page-content .info-image-placeholder img {
+  border-radius: 12px;
+  box-shadow: var(--shadow-dark);
+  display: block;
+}
+
+#about-page-content .info-text-box h2 {
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+/* --- Bố cục Đảo ngược --- */
+#about-page-content .reverse-layout .info-container {
+  flex-direction: row-reverse;
+}
+
+/* --- Nút Bấm --- */
+#about-page-content .primary-button {
+  display: inline-block;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: var(--shadow-light);
+}
+
+#about-page-content .primary-button:hover {
+  background-color: #ffd8de;
+  transform: translateY(-3px);
+}
+
+/* --- Tùy chỉnh Màu nền --- */
+#about-page-content .light-pink-bg {
+  background-color: #fdf2f2;
+}
+
+#about-page-content .mint-bg {
+  background-color: #f0f9f8;
+}
+
+#about-page-content .orange-bg {
+  background-color: #fff8f0;
+}
+
+#about-page-content .light-lavender-bg {
+  background-color: #f5f4fa;
+}
+
+
+/* --- Responsive cho Di động --- */
+@media (max-width: 768px) {
+  #about-page-content .hero-section {
+    height: 50vh;
+  }
+
+  #about-page-content .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  #about-page-content .info-section-strip {
+    padding: 50px 20px;
+  }
+
+  #about-page-content .info-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  #about-page-content .reverse-layout .info-container {
+    flex-direction: column-reverse;
+  }
+
+  #about-page-content .info-text-box {
+    text-align: center;
+  }
+
+  #about-page-content .info-text-box h2 {
+    font-size: 2rem;
+  }
+
+  #about-page-content .info-text-box p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  #about-page-content .primary-button {
+    width: 100%;
+  }
+}

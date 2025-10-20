@@ -121,6 +121,7 @@ function login1(){
         localStorage.setItem('isLoggedIn', 'true');
         localStorage.setItem('loggedInUser', JSON.stringify(storedUser));
         updateUI(storedUser);
+        
         alert("Đăng nhập thành công");
         hideLogin();
     } else {

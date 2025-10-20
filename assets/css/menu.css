@@ -62,12 +62,15 @@
 }
 /* --- Style chung --- */
 #header {
+    height: 50px;
+    background-color: #10141B;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1a1a1a; /* Ví dụ màu nền */
     padding: 10px 20px;
     color: white;
+    justify-content: space-between;
 }
 
 .nav-layout li {
