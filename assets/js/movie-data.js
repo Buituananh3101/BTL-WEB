@@ -116,8 +116,7 @@ const ALL_MOVIES = [
         meta: "2025 • 155 phút",
         rating_text: "Rất được mong đợi",
         tagline: "Nhà sản xuất: Ufotable <br> Thể loại: Anime, hành động <br> Đạo diễn: Haruo Sotozaki",
-        description: "Mở đầu cho trận chiến cuối cùng chống lại Muzan, phần tiếp theo của 'Kimetsu no Yaiba' là phim chiếu rạp mới nhất về phần Vô Hạn Thành.",
-        release_date: "15/08/2025",
+        description: "Sau khi kết thúc quá trình huấn luyện khắc nghiệt cùng các Trụ Cột, toàn bộ Sát Quỷ Đoàn đã sẵn sàng cho cuộc tổng tấn công vào sào huyệt của Muzan. Tuy nhiên, chúa quỷ đã đi trước một bước.\n\nPhần phim chiếu rạp mới nhất của 'Kimetsu no Yaiba', với tên gọi 'Vô Hạn Thành' (Infinity Castle), chính là màn mở đầu hoành tráng và bi tráng cho trận chiến cuối cùng này. Thay vì một cuộc tấn công có tổ chức, các thợ săn quỷ, bao gồm cả các Trụ Cột, bất ngờ bị kéo vào một chiều không gian dị biệt – Pháo đài Vô Cực.\n\nĐây là một mê cung vô tận, liên tục thay đổi cấu trúc dưới sự điều khiển của Thượng Huyền Tứ mới, Nakime. Bị chia cắt và lạc lối trong pháo đài, các thành viên Sát Quỷ Đoàn phải tham gia vào những trận chiến sinh tử không chỉ để tìm đường mà còn để đối mặt với những Thượng Huyền Quỷ hùng mạnh nhất còn lại như Akaza, Doma và Kokushibo.\n\nBộ phim này không chỉ là một phần tiếp theo; nó là chương đầu tiên của một thiên trường ca kết thúc toàn bộ series, đặt nền móng cho cuộc đối đầu long trời lở đất chống lại kẻ thù truyền kiếp Muzan Kibutsuji, nơi mà mọi hy sinh và nỗ lực đều được đẩy đến giới hạn.",        release_date: "15/08/2025",
         trailer_link: "https://www.youtube.com/embed/x7uLutVRBfI",
         schedules: [
             {
