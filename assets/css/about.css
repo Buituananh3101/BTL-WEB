@@ -21,12 +21,12 @@
   justify-content: center;
   text-align: center;
   padding: 0 20px;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/gt5.jpg"); */
   /* background-image: linear-gradient(#F9cadb 20%,#FDA6C4); */
   background-image: url("../background/troidem.jpg");
+
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   color: var(--text-light);
 }
 

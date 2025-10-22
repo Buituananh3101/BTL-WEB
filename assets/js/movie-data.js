@@ -145,7 +145,7 @@ const ALL_MOVIES = [
     },
     {
         id: "chu-thuat-hoi-chien",
-        title: "Chú Thuật Hồi Chiến: Hoài Ngọc",
+        title: "Chú Thuật Hồi Chiến",
         poster: "./assets/img/banner_thuatchu.jpg",
         background_img: "./assets/img/banner/chuthuathoichien_banner.webp",
         age_tag: "16+",
