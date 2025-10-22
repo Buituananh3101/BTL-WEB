@@ -49,8 +49,8 @@
 
 .nav-logo {
     margin-top: 4px;
-    height: 100px;
-    min-width: 100px;
+    width:20em;
+    
     display: flex;
 
 }
@@ -115,6 +115,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+        /* khoảng cách giữa các thành phần */
     margin: 0;
     padding: 0;
 }

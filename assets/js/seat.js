@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   // ===== KẾT THÚC KHỐI CODE MỚI =====
 
-  // 💺 Xử lý chọn ghế (PHẦN NÀY GIỮ NGUYÊN)
+  //  Xử lý chọn ghế (PHẦN NÀY GIỮ NGUYÊN)
   const seatMap = document.getElementById("seatMap");
   const countSpan = document.getElementById("count");
   const totalSpan = document.getElementById("total");

@@ -1,4 +1,3 @@
-// Nội dung MỚI cho file: assets/js/detail-page.js (CÓ LỊCH CHIẾU)
 
 window.addEventListener('DOMContentLoaded', () => {
     

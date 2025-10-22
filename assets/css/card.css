@@ -1,9 +1,7 @@
-/* --- Cài đặt chung cho trang (trong card.css chỉ giữ những style không gây xung đột) --- */
+
 body {
     background-color: #141414; /* Màu nền tối */
-    font-family: Arial, sans-serif; /* Font chữ phổ thông */
-    /* Các thuộc tính display: flex, justify-content, align-items, height: 100vh đã được loại bỏ 
-       để không xung đột với bố cục Bootstrap tổng thể của bạn. */
+    font-family: Arial, sans-serif;
     margin: 0;
 }
 

@@ -18,7 +18,7 @@
   /* background-color:#F9CADB;  */
   background-image: linear-gradient(#F9cadb,#FDA6C4);
   border-radius: 15px; /* Bo tròn để khớp với tab */
-  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1); /* Hiệu ứng chuyển động mượt mà */
+  transition: all 1s cubic-bezier(0.23, 0.8, 0.32, 1); /* Hiệu ứng chuyển động mượt mà */
   z-index: 1; /* Nằm dưới chữ nhưng trên nền của nav */
 }
 
