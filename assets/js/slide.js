@@ -2,7 +2,7 @@ const images = document.getElementsByClassName('img');
 let index = 0;
 let timeoutId;
 
-function showImage(){
+function showImage(){ 
     
     for(let i = 0; i < images.length; i++){
         if(!images[i].classList.contains("hidden")){

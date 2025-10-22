@@ -1,14 +1,4 @@
-/* THAY ĐỔI: 
-  Tất cả CSS của trang phim đều được bọc trong class '.movie-details-page'.
-  Điều này đảm bảo nó CHỈ ảnh hưởng đến trang phim (trang có <body class="movie-details-page">)
-  và không ảnh hưởng đến header hay các trang khác.
-*/
 
-/* --- CÁC STYLE GÂY XUNG ĐỘT ĐÃ BỊ XÓA --- */
-/* Đã xóa selector #header { ... } */
-/* Đã xóa selector body { ... } */
-
-/* ------------------------------------- */
 
 .movie-details-page .background {
   position: fixed;
@@ -118,6 +108,7 @@
   color: #ddd;
   font-size: 18px;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .movie-details-page .movie-extra p {

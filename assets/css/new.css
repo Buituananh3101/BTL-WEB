@@ -27,7 +27,6 @@ body {
 }
 
 /* --- Grid Layout for Cards --- */
-/* --- Grid Layout for Cards --- */
 .promotions-grid {
    display: grid;
    grid-template-columns: repeat(4, 280px);

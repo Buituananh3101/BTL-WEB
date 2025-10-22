@@ -1,9 +1,4 @@
-/* NỘI DUNG MỚI CHO FILE: assets/js/movie.js
-  File này BÂY GIỜ chỉ còn 1 nhiệm vụ: 
-  Xử lý BẬT/TẮT popup trailer.
-*/
 
-// --- 1. Xử lý Trailer Popup (Đã sửa lại) ---
 
 // Phải bọc trong DOMContentLoaded để đảm bảo các thẻ #trailerPopup, #trailerFrame... đã tồn tại
 document.addEventListener("DOMContentLoaded", () => {
@@ -50,19 +45,3 @@ function closeTrailer() {
   }
 }
 
-// --- 2. Xử lý chọn ngày ---
-/*
-  ĐÃ XÓA PHẦN NÀY.
-  Lý do: File "detail-page.js" đã tự động "vẽ" các nút ngày
-  và đã bao gồm logic xử lý 'active' (in đậm) cho nút được chọn.
-  Nếu giữ lại code cũ sẽ gây xung đột.
-*/
-
-// --- 3. XỬ LÝ ĐẶT VÉ (PHẦN QUAN TRỌNG NHẤT) ---
-/*
-  ĐÃ XÓA PHẦN NÀY.
-  Lý do: File "detail-page.js" đã tự động "vẽ" các nút giờ
-  và gán sự kiện click cho chúng (chuyển sang trang seat.html
-  với ID phim, ngày, giờ trên URL). 
-  Code cũ này dùng localStorage và không còn phù hợp.
-*/
